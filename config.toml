@@ -1,0 +1,4 @@
+baseURL = "https://oswinedu.github.io/"
+languageCode = "en-us"
+title = "一休笔记"
+theme = 'hugo-book'
