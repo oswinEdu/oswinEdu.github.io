@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://oswinedu.github.io/docs/blander/aaaa/</loc>
+    <loc>https://oswinedu.github.io/docs/blander/%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE/</loc>
     <lastmod>2023-10-29T23:21:04+08:00</lastmod>
   </url><url>
     <loc>https://oswinedu.github.io/docs/blander/</loc>
@@ -14,7 +14,7 @@
   </url><url>
     <loc>https://oswinedu.github.io/docs/example/table-of-contents/without-toc/</loc>
   </url><url>
-    <loc>https://oswinedu.github.io/docs/blander/cccc/</loc>
+    <loc>https://oswinedu.github.io/docs/blander/%E5%B7%A5%E4%BD%9C%E5%8C%BA/</loc>
     <lastmod>2023-10-29T23:21:04+08:00</lastmod>
   </url><url>
     <loc>https://oswinedu.github.io/posts/creating-a-new-theme/</loc>
@@ -27,14 +27,11 @@
   </url><url>
     <loc>https://oswinedu.github.io/docs/example/collapsed/</loc>
   </url><url>
-    <loc>https://oswinedu.github.io/docs/cccc/</loc>
-    <lastmod>2023-10-30T22:45:28+08:00</lastmod>
-  </url><url>
     <loc>https://oswinedu.github.io/docs/</loc>
-    <lastmod>2023-10-30T22:45:28+08:00</lastmod>
+    <lastmod>2023-10-29T23:21:04+08:00</lastmod>
   </url><url>
     <loc>https://oswinedu.github.io/</loc>
-    <lastmod>2023-10-30T22:45:28+08:00</lastmod>
+    <lastmod>2023-10-29T23:21:04+08:00</lastmod>
   </url><url>
     <loc>https://oswinedu.github.io/posts/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
