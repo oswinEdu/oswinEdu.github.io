@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blander on 一休笔记</title>
+    <link>https://oswinedu.github.io/docs/blander/</link>
+    <description>Recent content in Blander on 一休笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Oct 2023 23:21:04 +0800</lastBuildDate><atom:link href="https://oswinedu.github.io/docs/blander/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://oswinedu.github.io/docs/blander/aaaa/</link>
+      <pubDate>Sun, 29 Oct 2023 23:21:04 +0800</pubDate>
+      
+      <guid>https://oswinedu.github.io/docs/blander/aaaa/</guid>
+      <description>常用设置 #  1.更改快捷键 #   Blender编好设置/键位映射
+ 1.平移工作空间 #   设置后 cmd + 鼠标左键
+ 2.常用设置 #  1.围绕选择物体选择 #   Blender编好设置/视图切换/围绕选择物体旋转(勾选)
+ 1. #  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://oswinedu.github.io/docs/blander/cccc/</link>
+      <pubDate>Sun, 29 Oct 2023 23:21:04 +0800</pubDate>
+      
+      <guid>https://oswinedu.github.io/docs/blander/cccc/</guid>
+      <description>工作区 #  1.常用操作 #   平移：cmd + 鼠标左键(后改的快捷键)
+旋转：option + 鼠标左键
+缩放：滑动鼠标滚轮
+ 2.坐标 #  右手坐标系，z轴向上、xy平面右上角正，unity y轴向上、xz平面右上角正
+3.视图 #  1.透视图 #  近大远小、滚动鼠标滑轮查看近大远小
+2.正交视图 #  无论远近一样大小，分别从6个正方向预览模型
+ 点击 Z轴 从上面预览模型、ctrl+Z轴 下面预览模型
+点击 X轴 从左面预览模型、ctrl+X轴 右面预览模型
+点击 Y轴 从前面预览模型、ctrl+Y轴 后面预览模型
+ </description>
+    </item>
+    
+  </channel>
+</rss>
