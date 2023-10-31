@@ -6,14 +6,18 @@
 <meta name="description" content="面 #  1.面细分 #  面的细分，本质是对边的细分，一般针对四边形
 1.细分后形成多个面 #  2.右键细分 #  3.不能细分 #   2.挤出面 #  快捷键e, 也可左边工具栏挤出工具
 1.向外挤出 #  2.向内挤出 #  3.多个面挤出 #  4.沿法向挤出 #  5.沿xyz挤出 #   3.内插面 #  快捷键i, 也可左边工具栏挤出工具
-1.内插参数1 #  2.内插参数2 #  3.内插参数3 #  4.内插参数4 #  5.内插参数5 #  ">
+1.内插参数1 #  2.内插参数2 #  3.内插参数3 #  4.内插参数4 #  5.内插参数5 #   4.尖分面 #  从面的中心连接到每个顶点
+ 5.融并面 #  将多个面合并成一个面
+ 6.三角化 #  把一个面分割成若干个三角形，通过顶点连接">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
 <meta property="og:description" content="面 #  1.面细分 #  面的细分，本质是对边的细分，一般针对四边形
 1.细分后形成多个面 #  2.右键细分 #  3.不能细分 #   2.挤出面 #  快捷键e, 也可左边工具栏挤出工具
 1.向外挤出 #  2.向内挤出 #  3.多个面挤出 #  4.沿法向挤出 #  5.沿xyz挤出 #   3.内插面 #  快捷键i, 也可左边工具栏挤出工具
-1.内插参数1 #  2.内插参数2 #  3.内插参数3 #  4.内插参数4 #  5.内插参数5 #  " />
+1.内插参数1 #  2.内插参数2 #  3.内插参数3 #  4.内插参数4 #  5.内插参数5 #   4.尖分面 #  从面的中心连接到每个顶点
+ 5.融并面 #  将多个面合并成一个面
+ 6.三角化 #  把一个面分割成若干个三角形，通过顶点连接" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://oswinedu.github.io/docs/blander/4.%E9%9D%A2/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2023-10-29T23:21:04+08:00" />
@@ -24,7 +28,7 @@
 <link rel="icon" href="/favicon.png" >
 <link rel="stylesheet" href="/book.min.33a48f5432973b8ff9a82679d9e45d67f2c15d4399bd2829269455cfe390b5e8.css" integrity="sha256-M6SPVDKXO4/5qCZ52eRdZ/LBXUOZvSgpJpRVz&#43;OQteg=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.4bb6cff307bada06f1b2d646626d0fe8352a0a95aeecb57fa283ee58290bc5bc.js" integrity="sha256-S7bP8we62gbxstZGYm0P6DUqCpWu7LV/ooPuWCkLxbw=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.76f40b7335dbfdff6b1ad8b040ec72a35ea73c6c3c20c42980d9eb3ec2ccb255.js" integrity="sha256-dvQLczXb/f9rGtiwQOxyo16nPGw8IMQpgNnrPsLMslU=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -540,6 +544,27 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#5内插参数5"><strong>5.内插参数5</strong></a></li>
       </ul>
     </li>
+    <li><a href="#4尖分面"><strong>4.尖分面</strong></a></li>
+    <li><a href="#5融并面"><strong>5.融并面</strong></a></li>
+    <li><a href="#6三角化"><strong>6.三角化</strong></a></li>
+    <li><a href="#7切割面"><strong>7.切割面</strong></a>
+      <ul>
+        <li><a href="#1快捷键"><strong>1.快捷键</strong></a></li>
+        <li><a href="#2角度约束"><strong>2.角度约束</strong></a></li>
+        <li><a href="#3切穿"><strong>3.切穿</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#8面的法向"><strong>8.面的法向</strong></a>
+      <ul>
+        <li><a href="#1翻转面"><strong>1.翻转面</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#9填充"><strong>9.填充</strong></a>
+      <ul>
+        <li><a href="#1三角填充"><strong>1.三角填充</strong></a></li>
+        <li><a href="#2栅格填充"><strong>2.栅格填充</strong></a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -639,6 +664,92 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#5%e5%86%85%e6%8f%92%e5%8f%82%e6%95%b05">#</a>
 </h3>
 <img src="/images/blender/3/35.png" width="60%" height="60%" title="Twitter: {{.}}" alt="Twitter">
+<hr>
+<h2 id="4尖分面">
+  <strong>4.尖分面</strong>
+  <a class="anchor" href="#4%e5%b0%96%e5%88%86%e9%9d%a2">#</a>
+</h2>
+<p>从面的中心连接到每个顶点</p>
+<img src="/images/blender/3/41.png" width="60%" height="60%" title="Twitter: {{.}}" alt="Twitter">
+<img src="/images/blender/3/42.png" width="60%" height="60%" title="Twitter: {{.}}" alt="Twitter">
+<hr>
+<h2 id="5融并面">
+  <strong>5.融并面</strong>
+  <a class="anchor" href="#5%e8%9e%8d%e5%b9%b6%e9%9d%a2">#</a>
+</h2>
+<p>将多个面合并成一个面</p>
+<img src="/images/blender/3/51.png" width="60%" height="60%" title="Twitter: {{.}}" alt="Twitter">
+<img src="/images/blender/3/52.png" width="60%" height="60%" title="Twitter: {{.}}" alt="Twitter">
+<hr>
+<h2 id="6三角化">
+  <strong>6.三角化</strong>
+  <a class="anchor" href="#6%e4%b8%89%e8%a7%92%e5%8c%96">#</a>
+</h2>
+<p>把一个面分割成若干个三角形，通过顶点连接</p>
+<img src="/images/blender/3/61.png" width="60%" height="60%" title="Twitter: {{.}}" alt="Twitter">
+<img src="/images/blender/3/62.png" width="60%" height="60%" title="Twitter: {{.}}" alt="Twitter">
+<img src="/images/blender/3/63.png" width="60%" height="60%" title="Twitter: {{.}}" alt="Twitter">
+<hr>
+<h2 id="7切割面">
+  <strong>7.切割面</strong>
+  <a class="anchor" href="#7%e5%88%87%e5%89%b2%e9%9d%a2">#</a>
+</h2>
+<h3 id="1快捷键">
+  <strong>1.快捷键</strong>
+  <a class="anchor" href="#1%e5%bf%ab%e6%8d%b7%e9%94%ae">#</a>
+</h3>
+<p>快捷键 k 启动切割工具</p>
+<ol>
+<li>确认完成 enter/sapce</li>
+<li>取消 esc/鼠标右键</li>
+<li>撤销 cmd + z</li>
+<li>吸附中点 shift</li>
+</ol>
+<img src="/images/blender/3/71.png" width="60%" height="60%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="2角度约束">
+  <strong>2.角度约束</strong>
+  <a class="anchor" href="#2%e8%a7%92%e5%ba%a6%e7%ba%a6%e6%9d%9f">#</a>
+</h3>
+<p>a 角度约束(切到正交视图)</p>
+<img src="/images/blender/3/72.png" width="60%" height="60%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="3切穿">
+  <strong>3.切穿</strong>
+  <a class="anchor" href="#3%e5%88%87%e7%a9%bf">#</a>
+</h3>
+<p>c 切穿(切到正交视图)</p>
+<img src="/images/blender/3/73.png" width="60%" height="60%" title="Twitter: {{.}}" alt="Twitter">
+<hr>
+<h2 id="8面的法向">
+  <strong>8.面的法向</strong>
+  <a class="anchor" href="#8%e9%9d%a2%e7%9a%84%e6%b3%95%e5%90%91">#</a>
+</h2>
+<h3 id="1翻转面">
+  <strong>1.翻转面</strong>
+  <a class="anchor" href="#1%e7%bf%bb%e8%bd%ac%e9%9d%a2">#</a>
+</h3>
+<p>区分正面和背面通过设置颜色</p>
+<img src="/images/blender/3/81.png" width="60%" height="60%" title="Twitter: {{.}}" alt="Twitter">
+<hr>
+<h2 id="9填充">
+  <strong>9.填充</strong>
+  <a class="anchor" href="#9%e5%a1%ab%e5%85%85">#</a>
+</h2>
+<p>选中一圈边进行填充</p>
+<h3 id="1三角填充">
+  <strong>1.三角填充</strong>
+  <a class="anchor" href="#1%e4%b8%89%e8%a7%92%e5%a1%ab%e5%85%85">#</a>
+</h3>
+<p>选中一圈边</p>
+<img src="/images/blender/3/91.png" width="60%" height="60%" title="Twitter: {{.}}" alt="Twitter">
+<img src="/images/blender/3/92.png" width="60%" height="60%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="2栅格填充">
+  <strong>2.栅格填充</strong>
+  <a class="anchor" href="#2%e6%a0%85%e6%a0%bc%e5%a1%ab%e5%85%85">#</a>
+</h3>
+<p>选中一圈边，快捷键 f</p>
+<img src="/images/blender/3/93.png" width="60%" height="60%" title="Twitter: {{.}}" alt="Twitter">
+<img src="/images/blender/3/94.png" width="60%" height="60%" title="Twitter: {{.}}" alt="Twitter">
+<hr>
 </article>
  
       
@@ -703,6 +814,27 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#3内插参数3"><strong>3.内插参数3</strong></a></li>
         <li><a href="#4内插参数4"><strong>4.内插参数4</strong></a></li>
         <li><a href="#5内插参数5"><strong>5.内插参数5</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#4尖分面"><strong>4.尖分面</strong></a></li>
+    <li><a href="#5融并面"><strong>5.融并面</strong></a></li>
+    <li><a href="#6三角化"><strong>6.三角化</strong></a></li>
+    <li><a href="#7切割面"><strong>7.切割面</strong></a>
+      <ul>
+        <li><a href="#1快捷键"><strong>1.快捷键</strong></a></li>
+        <li><a href="#2角度约束"><strong>2.角度约束</strong></a></li>
+        <li><a href="#3切穿"><strong>3.切穿</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#8面的法向"><strong>8.面的法向</strong></a>
+      <ul>
+        <li><a href="#1翻转面"><strong>1.翻转面</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#9填充"><strong>9.填充</strong></a>
+      <ul>
+        <li><a href="#1三角填充"><strong>1.三角填充</strong></a></li>
+        <li><a href="#2栅格填充"><strong>2.栅格填充</strong></a></li>
       </ul>
     </li>
   </ul>
