@@ -16,7 +16,7 @@
       <description>常用设置 #  1.更改快捷键 #   Blender编好设置/键位映射
  1.平移工作空间 #   设置后 cmd + 鼠标左键
  2.常用设置 #  1.围绕选择物体选择 #   Blender编好设置/视图切换/围绕选择物体旋转(勾选)
- 1. #  </description>
+ 2.显示模型边界框 #  </description>
     </item>
     
     <item>
@@ -79,6 +79,61 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
     </item>
     
     <item>
+      <title></title>
+      <link>https://oswinedu.github.io/docs/blander/1.%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Sun, 29 Oct 2023 23:21:04 +0800</pubDate>
+      
+      <guid>https://oswinedu.github.io/docs/blander/1.%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/</guid>
+      <description>基础操作 #  1.移动旋转缩放 #  1.移动 #  点击移动图标
+ 沿着 x y z 轴移动 沿着 xy xz yz 三个平面移动 自由移动  快捷键移动-g(grab抓取)
+ 可以任意移动 x y z 沿对应轴移动  2.旋转 #  点击旋转图标
+ 可选择 x y z 轴旋转  快捷键旋转-r(rotate)
+ 可以任意旋转 x y z 沿对应轴旋转  3.缩放 #  点击缩放图标
+ 沿着 x y z 轴缩放 沿着 xy xz yz 三个平面缩放  快捷键旋转-s(scale)
+ 可以任意缩放 x y z 沿对应轴缩放  4.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://oswinedu.github.io/docs/blander/2.%E6%B8%B8%E6%A0%87%E5%8E%9F%E7%82%B9/</link>
+      <pubDate>Sun, 29 Oct 2023 23:21:04 +0800</pubDate>
+      
+      <guid>https://oswinedu.github.io/docs/blander/2.%E6%B8%B8%E6%A0%87%E5%8E%9F%E7%82%B9/</guid>
+      <description>游标|原点 #  1.游标 #  模型的出生点
+1.移动-鼠标 #  shift + 鼠标右键
+2.移动-吸附 #  把游标吸附到模型某个顶点
+ 切换-编辑模式 选择点模式 左上角网格 网格/吸附/游标到选中项  3.隐藏游标附 #   2.模型原点 #  移动、旋转、缩放 以原点为基点
+1.移动-设置 #  选中模型-&amp;gt;右键
+2.移动-吸附游标 #  先设置游标位置, 如上图选择原点-&amp;gt;3d游标</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://oswinedu.github.io/docs/blander/3.%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Sun, 29 Oct 2023 23:21:04 +0800</pubDate>
+      
+      <guid>https://oswinedu.github.io/docs/blander/3.%E6%A8%A1%E5%9E%8B/</guid>
+      <description>模型 #   由 点、线、面 组成(主要是面) 面 由三边形、四边形、多边形组成，一般使用四边形面 模型内部中空  1.模型基础 #  1.认识模型 #  正方体、长方体、
+2.添加模型 #  3.微调模型 #  首次创建模型左下角会出现, 微调面板, 调整模型
+4.设置模型属性 #  (1)调整模型-侧边栏(快捷键n)
+ 位置 旋转 缩放 尺寸  (2)物体属性-右下角
+ 2.编辑模型 #   选中模型按下 TAB 键进入编辑模式，再按 TAB 键退出编辑模式 编辑模式对模型点、线、面操作  1.单选点-线-面 #  选择点|线|面模式，单击鼠标左键
+2.多选点-线-面 #   增加：按住 shift 键，鼠标左键单击未选择 减少：按住 ctrl 键，鼠标左键单击已选择 全选：选择点|线|面 按 a 键  3.工具选点-线-面 #   调整、框选、刷选、套索</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://oswinedu.github.io/docs/blander/4.%E9%9D%A2/</link>
+      <pubDate>Sun, 29 Oct 2023 23:21:04 +0800</pubDate>
+      
+      <guid>https://oswinedu.github.io/docs/blander/4.%E9%9D%A2/</guid>
+      <description>面 #  1.面细分 #  面的细分，本质是对边的细分，一般针对四边形
+1.细分后形成多个面 #  2.右键细分 #  3.不能细分 #   2.挤出面 #  快捷键e, 也可左边工具栏挤出工具
+1.向外挤出 #  2.向内挤出 #  3.多个面挤出 #  4.沿法向挤出 #  5.沿xyz挤出 #   3.内插面 #  快捷键i, 也可左边工具栏挤出工具
+1.内插参数1 #  2.内插参数2 #  3.内插参数3 #  4.内插参数4 #  5.内插参数5 #  </description>
+    </item>
+    
+    <item>
       <title>(Hu)go Template Primer</title>
       <link>https://oswinedu.github.io/posts/goisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
@@ -119,6 +174,16 @@ Venasque repulsa Samos qui, exspectatum eram animosque hinc, aut manes, Assyrii.
       <guid>https://oswinedu.github.io/docs/example/hidden/</guid>
       <description>This page is hidden in menu #  Quondam non pater est dignior ille Eurotas #  Latent te facies #  Lorem markdownum arma ignoscas vocavit quoque ille texit mandata mentis ultimus, frementes, qui in vel. Hippotades Peleus pennas conscia cuiquam Caeneus quas.
  Pater demittere evincitque reddunt Maxime adhuc pressit huc Danaas quid freta Soror ego Luctus linguam saxa ultroque prior Tatiumque inquit Saepe liquitur subita superata dederat Anius sudor  Cum honorum Latona #  O fallor in sustinui iussorum equidem.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://oswinedu.github.io/docs/example/tmp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oswinedu.github.io/docs/example/tmp/</guid>
+      <description>1. #  1. #   前面有空格     下面空着换行用
+ </description>
     </item>
     
     <item>
