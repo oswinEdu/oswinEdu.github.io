@@ -3,21 +3,17 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="面 #  1.面细分 #  面的细分，本质是对边的细分，一般针对四边形
-1.细分后形成多个面 #  2.右键细分 #  3.不能细分 #   2.挤出面 #  快捷键e, 也可左边工具栏挤出工具
+<meta name="description" content="面 #  1.面细分 #   把一个面分割成若干个面 本质是对边的细分，一般针对四边形  1.细分后形成多个面 #  2.右键细分 #  3.不能细分 #   2.挤出面 #  快捷键e, 也可左边工具栏挤出工具
 1.向外挤出 #  2.向内挤出 #  3.多个面挤出 #  4.沿法向挤出 #  5.沿xyz挤出 #   3.内插面 #  快捷键i, 也可左边工具栏挤出工具
 1.内插参数1 #  2.内插参数2 #  3.内插参数3 #  4.内插参数4 #  5.内插参数5 #   4.尖分面 #  从面的中心连接到每个顶点
- 5.融并面 #  将多个面合并成一个面
- 6.三角化 #  把一个面分割成若干个三角形，通过顶点连接">
+ 5.融并面 #  将多个面合并成一个面">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="面 #  1.面细分 #  面的细分，本质是对边的细分，一般针对四边形
-1.细分后形成多个面 #  2.右键细分 #  3.不能细分 #   2.挤出面 #  快捷键e, 也可左边工具栏挤出工具
+<meta property="og:description" content="面 #  1.面细分 #   把一个面分割成若干个面 本质是对边的细分，一般针对四边形  1.细分后形成多个面 #  2.右键细分 #  3.不能细分 #   2.挤出面 #  快捷键e, 也可左边工具栏挤出工具
 1.向外挤出 #  2.向内挤出 #  3.多个面挤出 #  4.沿法向挤出 #  5.沿xyz挤出 #   3.内插面 #  快捷键i, 也可左边工具栏挤出工具
 1.内插参数1 #  2.内插参数2 #  3.内插参数3 #  4.内插参数4 #  5.内插参数5 #   4.尖分面 #  从面的中心连接到每个顶点
- 5.融并面 #  将多个面合并成一个面
- 6.三角化 #  把一个面分割成若干个三角形，通过顶点连接" />
+ 5.融并面 #  将多个面合并成一个面" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://oswinedu.github.io/docs/blander/4.%E9%9D%A2/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2023-10-29T23:21:04+08:00" />
@@ -28,7 +24,7 @@
 <link rel="icon" href="/favicon.png" >
 <link rel="stylesheet" href="/book.min.33a48f5432973b8ff9a82679d9e45d67f2c15d4399bd2829269455cfe390b5e8.css" integrity="sha256-M6SPVDKXO4/5qCZ52eRdZ/LBXUOZvSgpJpRVz&#43;OQteg=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.76f40b7335dbfdff6b1ad8b040ec72a35ea73c6c3c20c42980d9eb3ec2ccb255.js" integrity="sha256-dvQLczXb/f9rGtiwQOxyo16nPGw8IMQpgNnrPsLMslU=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.98838bc52c25b7dfec296f1bd9da07e0c920a4b8f85cc15eb92eccfa32b16eff.js" integrity="sha256-mIOLxSwlt9/sKW8b2doH4MkgpLj4XMFeuS7M&#43;jKxbv8=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -162,6 +158,58 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/blander/4.%E9%9D%A2/" class="active">4.面</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/5.%E8%BE%B9/" class="">5.边</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/6.%E7%82%B9/" class="">6.点</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/10.%E5%BD%A2%E7%8A%B6/" class="">10.形状</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/23.%E6%9D%90%E8%B4%A8/" class="">23.材质</a>
   
 
         </li>
@@ -565,6 +613,7 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#2栅格填充"><strong>2.栅格填充</strong></a></li>
       </ul>
     </li>
+    <li><a href="#10并排面"><strong>10.并排面</strong></a></li>
   </ul>
 </nav>
 
@@ -585,7 +634,10 @@ https://github.com/alex-shpak/hugo-book
   <strong>1.面细分</strong>
   <a class="anchor" href="#1%e9%9d%a2%e7%bb%86%e5%88%86">#</a>
 </h2>
-<p>面的细分，本质是对边的细分，一般针对四边形</p>
+<ol>
+<li>把一个面分割成若干个面</li>
+<li>本质是对边的细分，一般针对四边形</li>
+</ol>
 <h3 id="1细分后形成多个面">
   <strong>1.细分后形成多个面</strong>
   <a class="anchor" href="#1%e7%bb%86%e5%88%86%e5%90%8e%e5%bd%a2%e6%88%90%e5%a4%9a%e4%b8%aa%e9%9d%a2">#</a>
@@ -750,6 +802,12 @@ https://github.com/alex-shpak/hugo-book
 <img src="/images/blender/3/93.png" width="60%" height="60%" title="Twitter: {{.}}" alt="Twitter">
 <img src="/images/blender/3/94.png" width="60%" height="60%" title="Twitter: {{.}}" alt="Twitter">
 <hr>
+<h2 id="10并排面">
+  <strong>10.并排面</strong>
+  <a class="anchor" href="#10%e5%b9%b6%e6%8e%92%e9%9d%a2">#</a>
+</h2>
+<p>选择一个面，<code>ctrl + alt + 鼠标左键</code>
+参考并排边</p>
 </article>
  
       
@@ -837,6 +895,7 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#2栅格填充"><strong>2.栅格填充</strong></a></li>
       </ul>
     </li>
+    <li><a href="#10并排面"><strong>10.并排面</strong></a></li>
   </ul>
 </nav>
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="模型 #   由 点、线、面 组成(主要是面) 面 由三边形、四边形、多边形组成，一般使用四边形面 模型内部中空  1.模型基础 #  1.认识模型 #  平面、立方体、椎体、柱体、球体
+<meta name="description" content="模型 #   由 点、线、面 组成(主要是面) 面 由三边形、四边形、多边形组成，一般使用四边形面 模型内部中空  1.模型基础 #  1.认识模型 #  平面、立方体、椎体、柱体、环体、球体
 2.添加模型 #  3.微调模型 #  首次创建模型左下角会出现, 微调面板, 调整模型
 4.设置模型属性 #  (1)调整模型-侧边栏(快捷键n)
  位置 旋转 缩放 尺寸  (2)物体属性-右下角
@@ -12,7 +12,7 @@
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="模型 #   由 点、线、面 组成(主要是面) 面 由三边形、四边形、多边形组成，一般使用四边形面 模型内部中空  1.模型基础 #  1.认识模型 #  平面、立方体、椎体、柱体、球体
+<meta property="og:description" content="模型 #   由 点、线、面 组成(主要是面) 面 由三边形、四边形、多边形组成，一般使用四边形面 模型内部中空  1.模型基础 #  1.认识模型 #  平面、立方体、椎体、柱体、环体、球体
 2.添加模型 #  3.微调模型 #  首次创建模型左下角会出现, 微调面板, 调整模型
 4.设置模型属性 #  (1)调整模型-侧边栏(快捷键n)
  位置 旋转 缩放 尺寸  (2)物体属性-右下角
@@ -28,7 +28,7 @@
 <link rel="icon" href="/favicon.png" >
 <link rel="stylesheet" href="/book.min.33a48f5432973b8ff9a82679d9e45d67f2c15d4399bd2829269455cfe390b5e8.css" integrity="sha256-M6SPVDKXO4/5qCZ52eRdZ/LBXUOZvSgpJpRVz&#43;OQteg=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.76f40b7335dbfdff6b1ad8b040ec72a35ea73c6c3c20c42980d9eb3ec2ccb255.js" integrity="sha256-dvQLczXb/f9rGtiwQOxyo16nPGw8IMQpgNnrPsLMslU=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.98838bc52c25b7dfec296f1bd9da07e0c920a4b8f85cc15eb92eccfa32b16eff.js" integrity="sha256-mIOLxSwlt9/sKW8b2doH4MkgpLj4XMFeuS7M&#43;jKxbv8=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -162,6 +162,58 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/blander/4.%E9%9D%A2/" class="">4.面</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/5.%E8%BE%B9/" class="">5.边</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/6.%E7%82%B9/" class="">6.点</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/10.%E5%BD%A2%E7%8A%B6/" class="">10.形状</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/23.%E6%9D%90%E8%B4%A8/" class="">23.材质</a>
   
 
         </li>
@@ -534,6 +586,16 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#3工具选点-线-面"><strong>3.工具选点-线-面</strong></a></li>
       </ul>
     </li>
+    <li><a href="#3选中-点线面"><strong>3.选中-点|线|面</strong></a>
+      <ul>
+        <li><a href="#0选择"><strong>0.选择</strong></a></li>
+        <li><a href="#1并排边"><strong>1.并排边</strong></a></li>
+        <li><a href="#2并排面"><strong>2.并排面</strong></a></li>
+        <li><a href="#3循环边"><strong>3.循环边</strong></a></li>
+        <li><a href="#4间隔边面"><strong>4.间隔边|面</strong></a></li>
+        <li><a href="#5选中相连项"><strong>5.选中相连项</strong></a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -563,7 +625,7 @@ https://github.com/alex-shpak/hugo-book
   <strong>1.认识模型</strong>
   <a class="anchor" href="#1%e8%ae%a4%e8%af%86%e6%a8%a1%e5%9e%8b">#</a>
 </h3>
-<p>平面、立方体、椎体、柱体、球体</p>
+<p>平面、立方体、椎体、柱体、环体、球体</p>
 <h3 id="2添加模型">
   <strong>2.添加模型</strong>
   <a class="anchor" href="#2%e6%b7%bb%e5%8a%a0%e6%a8%a1%e5%9e%8b">#</a>
@@ -621,6 +683,40 @@ https://github.com/alex-shpak/hugo-book
 </blockquote>
 <p>左上角工具栏</p>
 <img src="/images/blender/2/7.png" width="70%" height="70%" title="Twitter: {{.}}" alt="">
+<hr>
+<h2 id="3选中-点线面">
+  <strong>3.选中-点|线|面</strong>
+  <a class="anchor" href="#3%e9%80%89%e4%b8%ad-%e7%82%b9%e7%ba%bf%e9%9d%a2">#</a>
+</h2>
+<h3 id="0选择">
+  <strong>0.选择</strong>
+  <a class="anchor" href="#0%e9%80%89%e6%8b%a9">#</a>
+</h3>
+<img src="/images/blender/2/30.png" width="40%" height="40%" title="Twitter: {{.}}" alt="">
+<h3 id="1并排边">
+  <strong>1.并排边</strong>
+  <a class="anchor" href="#1%e5%b9%b6%e6%8e%92%e8%be%b9">#</a>
+</h3>
+<p><code>ctrl+alt+鼠标左键</code></p>
+<h3 id="2并排面">
+  <strong>2.并排面</strong>
+  <a class="anchor" href="#2%e5%b9%b6%e6%8e%92%e9%9d%a2">#</a>
+</h3>
+<p><code>ctrl+alt+鼠标左键</code></p>
+<h3 id="3循环边">
+  <strong>3.循环边</strong>
+  <a class="anchor" href="#3%e5%be%aa%e7%8e%af%e8%be%b9">#</a>
+</h3>
+<p>选中一条边，在选择里找循环边</p>
+<h3 id="4间隔边面">
+  <strong>4.间隔边|面</strong>
+  <a class="anchor" href="#4%e9%97%b4%e9%9a%94%e8%be%b9%e9%9d%a2">#</a>
+</h3>
+<h3 id="5选中相连项">
+  <strong>5.选中相连项</strong>
+  <a class="anchor" href="#5%e9%80%89%e4%b8%ad%e7%9b%b8%e8%bf%9e%e9%a1%b9">#</a>
+</h3>
+<p><code>ctrl + l</code></p>
 </article>
  
       
@@ -675,6 +771,16 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#1单选点-线-面"><strong>1.单选点-线-面</strong></a></li>
         <li><a href="#2多选点-线-面"><strong>2.多选点-线-面</strong></a></li>
         <li><a href="#3工具选点-线-面"><strong>3.工具选点-线-面</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#3选中-点线面"><strong>3.选中-点|线|面</strong></a>
+      <ul>
+        <li><a href="#0选择"><strong>0.选择</strong></a></li>
+        <li><a href="#1并排边"><strong>1.并排边</strong></a></li>
+        <li><a href="#2并排面"><strong>2.并排面</strong></a></li>
+        <li><a href="#3循环边"><strong>3.循环边</strong></a></li>
+        <li><a href="#4间隔边面"><strong>4.间隔边|面</strong></a></li>
+        <li><a href="#5选中相连项"><strong>5.选中相连项</strong></a></li>
       </ul>
     </li>
   </ul>

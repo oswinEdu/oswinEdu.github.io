@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="点 #  1.基础操作 #  1.移动 #  选中点 &#43; g
+2.旋转 #  选中点 &#43; r
+3.缩放 #  选中点 &#43; s
+4.滑移 #  选中点 &#43; gg 或 shift &#43; v
+滑移点沿着某条边移动
+5.删除 #  选中点 &#43; x 点所在的边和面也会被删除
+6.融并 #  选中点 &#43; ctrl &#43; x
+ 2.连接顶点 #  1.填充 #  选中多个点 &#43; f 填充
+2.连接-f #  选中两个未连接点 &#43; f
+仅仅是连接两个点，不会切割点所在的面
+3.连接-j #  选中两个未连接点 &#43; j 切割两个点所在的面">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="点 #  1.基础操作 #  1.移动 #  选中点 &#43; g
+2.旋转 #  选中点 &#43; r
+3.缩放 #  选中点 &#43; s
+4.滑移 #  选中点 &#43; gg 或 shift &#43; v
+滑移点沿着某条边移动
+5.删除 #  选中点 &#43; x 点所在的边和面也会被删除
+6.融并 #  选中点 &#43; ctrl &#43; x
+ 2.连接顶点 #  1.填充 #  选中多个点 &#43; f 填充
+2.连接-f #  选中两个未连接点 &#43; f
+仅仅是连接两个点，不会切割点所在的面
+3.连接-j #  选中两个未连接点 &#43; j 切割两个点所在的面" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://oswinedu.github.io/docs/blander/6.%E7%82%B9/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2023-10-29T23:21:04+08:00" />
+<meta property="article:modified_time" content="2023-10-29T23:21:04+08:00" />
+
+<title>6.点 | 一休笔记</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="stylesheet" href="/book.min.33a48f5432973b8ff9a82679d9e45d67f2c15d4399bd2829269455cfe390b5e8.css" integrity="sha256-M6SPVDKXO4/5qCZ52eRdZ/LBXUOZvSgpJpRVz&#43;OQteg=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.98838bc52c25b7dfec296f1bd9da07e0c920a4b8f85cc15eb92eccfa32b16eff.js" integrity="sha256-mIOLxSwlt9/sKW8b2doH4MkgpLj4XMFeuS7M&#43;jKxbv8=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>一休笔记</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a861fa792a7a37b9fce8a64f6c3bc0da" class="toggle" checked />
+    <label for="section-a861fa792a7a37b9fce8a64f6c3bc0da" class="flex justify-between">
+      <a href="/docs/blander/" class="">Blander</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE/" class="">常用设置</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/%E5%B7%A5%E4%BD%9C%E5%8C%BA/" class="">工作区</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/1.%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/" class="">1.基础操作</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/2.%E6%B8%B8%E6%A0%87%E5%8E%9F%E7%82%B9/" class="">2.游标原点</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/3.%E6%A8%A1%E5%9E%8B/" class="">3.模型</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/4.%E9%9D%A2/" class="">4.面</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/5.%E8%BE%B9/" class="">5.边</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/6.%E7%82%B9/" class="active">6.点</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/10.%E5%BD%A2%E7%8A%B6/" class="">10.形状</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/23.%E6%9D%90%E8%B4%A8/" class="">23.材质</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/example/" class="">Example Site</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/table-of-contents/" class="">Table of Contents</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/table-of-contents/with-toc/" class="">With ToC</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/table-of-contents/without-toc/" class="">Without ToC</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4e46b01272d410b3a99461d79326ddf4" class="toggle"  />
+    <label for="section-4e46b01272d410b3a99461d79326ddf4" class="flex justify-between">
+      <a role="button" class="">Collapsed</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/collapsed/3rd-level/" class="">3rd Level</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/collapsed/3rd-level/4th-level/" class="">4th Level</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Shortcodes</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/buttons/" class="">Buttons</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/columns/" class="">Columns</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/details/" class="">Details</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/expand/" class="">Expand</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/hints/" class="">Hints</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/katex/" class="">Katex</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/mermaid/" class="">Mermaid</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d3fc1bf6d66cd84b896a0af9f40cb1d5" class="toggle"  />
+    <label for="section-d3fc1bf6d66cd84b896a0af9f40cb1d5" class="flex justify-between">
+      <a href="/docs/shortcodes/section/" class="">Section</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/section/first-page/" class="">First Page</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/section/second-page/" class="">Second Page</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/tabs/" class="">Tabs</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/"  >
+        Blog
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>6.点</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1基础操作"><strong>1.基础操作</strong></a>
+      <ul>
+        <li><a href="#1移动"><strong>1.移动</strong></a></li>
+        <li><a href="#2旋转"><strong>2.旋转</strong></a></li>
+        <li><a href="#3缩放"><strong>3.缩放</strong></a></li>
+        <li><a href="#4滑移"><strong>4.滑移</strong></a></li>
+        <li><a href="#5删除"><strong>5.删除</strong></a></li>
+        <li><a href="#6融并"><strong>6.融并</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#2连接顶点"><strong>2.连接顶点</strong></a>
+      <ul>
+        <li><a href="#1填充"><strong>1.填充</strong></a></li>
+        <li><a href="#2连接-f"><strong>2.连接-f</strong></a></li>
+        <li><a href="#3连接-j"><strong>3.连接-j</strong></a></li>
+        <li><a href="#4连接-k"><strong>4.连接-k</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#3合并顶点"><strong>3.合并顶点</strong></a>
+      <ul>
+        <li><a href="#1合并-多个顶点"><strong>1.合并-多个顶点</strong></a></li>
+        <li><a href="#2合并-自动"><strong>2.合并-自动</strong></a></li>
+        <li><a href="#3选中重叠顶点"><strong>3.选中重叠顶点</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#4顶点倒角"><strong>4.顶点倒角</strong></a>
+      <ul>
+        <li><a href="#1参数-宽度"><strong>1.参数-宽度</strong></a></li>
+        <li><a href="#2参数-段数"><strong>2.参数-段数</strong></a></li>
+        <li><a href="#3参数-形状"><strong>3.参数-形状</strong></a></li>
+        <li><a href="#4倒角-两边"><strong>4.倒角-两边</strong></a></li>
+        <li><a href="#5倒角-三边"><strong>5.倒角-三边</strong></a></li>
+        <li><a href="#6倒角-四边"><strong>6.倒角-四边</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#5顶点挤出"><strong>5.顶点挤出</strong></a>
+      <ul>
+        <li><a href="#1挤出"><strong>1.挤出</strong></a></li>
+        <li><a href="#2扩展"><strong>2.扩展</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#6衰减编辑"><strong>6.衰减编辑</strong></a>
+      <ul>
+        <li><a href="#1非衰减"><strong>1.非衰减</strong></a></li>
+        <li><a href="#2衰减"><strong>2.衰减</strong></a></li>
+        <li><a href="#3衰减-半径"><strong>3.衰减-半径</strong></a></li>
+        <li><a href="#4衰减-曲线"><strong>4.衰减-曲线</strong></a></li>
+        <li><a href="#5衰减-曲线-尖锐"><strong>5.衰减-曲线-尖锐</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="点">
+  <strong>点</strong>
+  <a class="anchor" href="#%e7%82%b9">#</a>
+</h1>
+<h2 id="1基础操作">
+  <strong>1.基础操作</strong>
+  <a class="anchor" href="#1%e5%9f%ba%e7%a1%80%e6%93%8d%e4%bd%9c">#</a>
+</h2>
+<h3 id="1移动">
+  <strong>1.移动</strong>
+  <a class="anchor" href="#1%e7%a7%bb%e5%8a%a8">#</a>
+</h3>
+<p>选中点 + <code>g</code></p>
+<img src="/images/blender/6/11.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="2旋转">
+  <strong>2.旋转</strong>
+  <a class="anchor" href="#2%e6%97%8b%e8%bd%ac">#</a>
+</h3>
+<p>选中点 + <code>r</code></p>
+<img src="/images/blender/6/12.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="3缩放">
+  <strong>3.缩放</strong>
+  <a class="anchor" href="#3%e7%bc%a9%e6%94%be">#</a>
+</h3>
+<p>选中点 + <code>s</code></p>
+<img src="/images/blender/6/13.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="4滑移">
+  <strong>4.滑移</strong>
+  <a class="anchor" href="#4%e6%bb%91%e7%a7%bb">#</a>
+</h3>
+<p>选中点 + <code>gg</code> 或 <code>shift + v</code><br>
+滑移点沿着某条边移动</p>
+<img src="/images/blender/6/14.png" width="50%" height="50%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="5删除">
+  <strong>5.删除</strong>
+  <a class="anchor" href="#5%e5%88%a0%e9%99%a4">#</a>
+</h3>
+<p>选中点 + <code>x</code> 点所在的边和面也会被删除</p>
+<img src="/images/blender/6/15.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="6融并">
+  <strong>6.融并</strong>
+  <a class="anchor" href="#6%e8%9e%8d%e5%b9%b6">#</a>
+</h3>
+<p>选中点 + <code>ctrl + x</code></p>
+<img src="/images/blender/6/16.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<hr>
+<h2 id="2连接顶点">
+  <strong>2.连接顶点</strong>
+  <a class="anchor" href="#2%e8%bf%9e%e6%8e%a5%e9%a1%b6%e7%82%b9">#</a>
+</h2>
+<h3 id="1填充">
+  <strong>1.填充</strong>
+  <a class="anchor" href="#1%e5%a1%ab%e5%85%85">#</a>
+</h3>
+<p>选中多个点 + <code>f</code> 填充</p>
+<img src="/images/blender/6/21.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<img src="/images/blender/6/22.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="2连接-f">
+  <strong>2.连接-f</strong>
+  <a class="anchor" href="#2%e8%bf%9e%e6%8e%a5-f">#</a>
+</h3>
+<p>选中两个未连接点 + <code>f</code><br>
+仅仅是连接两个点，不会切割点所在的面</p>
+<img src="/images/blender/6/23.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="3连接-j">
+  <strong>3.连接-j</strong>
+  <a class="anchor" href="#3%e8%bf%9e%e6%8e%a5-j">#</a>
+</h3>
+<p>选中两个未连接点 + <code>j</code>
+切割两个点所在的面</p>
+<img src="/images/blender/6/24.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="4连接-k">
+  <strong>4.连接-k</strong>
+  <a class="anchor" href="#4%e8%bf%9e%e6%8e%a5-k">#</a>
+</h3>
+<p>切割任意地方，生成点和面</p>
+<img src="/images/blender/6/25.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<hr>
+<h2 id="3合并顶点">
+  <strong>3.合并顶点</strong>
+  <a class="anchor" href="#3%e5%90%88%e5%b9%b6%e9%a1%b6%e7%82%b9">#</a>
+</h2>
+<p>相邻或重叠的顶点合并成一个</p>
+<h3 id="1合并-多个顶点">
+  <strong>1.合并-多个顶点</strong>
+  <a class="anchor" href="#1%e5%90%88%e5%b9%b6-%e5%a4%9a%e4%b8%aa%e9%a1%b6%e7%82%b9">#</a>
+</h3>
+<p>选中多个顶点 + <code>右键/顶点合并</code></p>
+<img src="/images/blender/6/31.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="2合并-自动">
+  <strong>2.合并-自动</strong>
+  <a class="anchor" href="#2%e5%90%88%e5%b9%b6-%e8%87%aa%e5%8a%a8">#</a>
+</h3>
+<p>两个顶点距离小于设定值自动合并</p>
+<img src="/images/blender/6/32.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="3选中重叠顶点">
+  <strong>3.选中重叠顶点</strong>
+  <a class="anchor" href="#3%e9%80%89%e4%b8%ad%e9%87%8d%e5%8f%a0%e9%a1%b6%e7%82%b9">#</a>
+</h3>
+<p>开启透视预览</p>
+<img src="/images/blender/6/33.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<hr>
+<h2 id="4顶点倒角">
+  <strong>4.顶点倒角</strong>
+  <a class="anchor" href="#4%e9%a1%b6%e7%82%b9%e5%80%92%e8%a7%92">#</a>
+</h2>
+<p><code>shift + ctrl + b</code></p>
+<img src="/images/blender/6/41.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="1参数-宽度">
+  <strong>1.参数-宽度</strong>
+  <a class="anchor" href="#1%e5%8f%82%e6%95%b0-%e5%ae%bd%e5%ba%a6">#</a>
+</h3>
+<img src="/images/blender/6/42.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="2参数-段数">
+  <strong>2.参数-段数</strong>
+  <a class="anchor" href="#2%e5%8f%82%e6%95%b0-%e6%ae%b5%e6%95%b0">#</a>
+</h3>
+<img src="/images/blender/6/43.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="3参数-形状">
+  <strong>3.参数-形状</strong>
+  <a class="anchor" href="#3%e5%8f%82%e6%95%b0-%e5%bd%a2%e7%8a%b6">#</a>
+</h3>
+<img src="/images/blender/6/44.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="4倒角-两边">
+  <strong>4.倒角-两边</strong>
+  <a class="anchor" href="#4%e5%80%92%e8%a7%92-%e4%b8%a4%e8%be%b9">#</a>
+</h3>
+<img src="/images/blender/6/45.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="5倒角-三边">
+  <strong>5.倒角-三边</strong>
+  <a class="anchor" href="#5%e5%80%92%e8%a7%92-%e4%b8%89%e8%be%b9">#</a>
+</h3>
+<img src="/images/blender/6/46.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="6倒角-四边">
+  <strong>6.倒角-四边</strong>
+  <a class="anchor" href="#6%e5%80%92%e8%a7%92-%e5%9b%9b%e8%be%b9">#</a>
+</h3>
+<img src="/images/blender/6/47.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<hr>
+<h2 id="5顶点挤出">
+  <strong>5.顶点挤出</strong>
+  <a class="anchor" href="#5%e9%a1%b6%e7%82%b9%e6%8c%a4%e5%87%ba">#</a>
+</h2>
+<h3 id="1挤出">
+  <strong>1.挤出</strong>
+  <a class="anchor" href="#1%e6%8c%a4%e5%87%ba">#</a>
+</h3>
+<p>选中一个点 + <code>e</code></p>
+<img src="/images/blender/6/51.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="2扩展">
+  <strong>2.扩展</strong>
+  <a class="anchor" href="#2%e6%89%a9%e5%b1%95">#</a>
+</h3>
+<p>选中一个点 + <code>alt + d</code><br>
+复制出一个新的顶点可以移动</p>
+<img src="/images/blender/6/52.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<hr>
+<h2 id="6衰减编辑">
+  <strong>6.衰减编辑</strong>
+  <a class="anchor" href="#6%e8%a1%b0%e5%87%8f%e7%bc%96%e8%be%91">#</a>
+</h2>
+<img src="/images/blender/6/60.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="1非衰减">
+  <strong>1.非衰减</strong>
+  <a class="anchor" href="#1%e9%9d%9e%e8%a1%b0%e5%87%8f">#</a>
+</h3>
+<img src="/images/blender/6/61.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="2衰减">
+  <strong>2.衰减</strong>
+  <a class="anchor" href="#2%e8%a1%b0%e5%87%8f">#</a>
+</h3>
+<img src="/images/blender/6/62.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="3衰减-半径">
+  <strong>3.衰减-半径</strong>
+  <a class="anchor" href="#3%e8%a1%b0%e5%87%8f-%e5%8d%8a%e5%be%84">#</a>
+</h3>
+<img src="/images/blender/6/63.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="4衰减-曲线">
+  <strong>4.衰减-曲线</strong>
+  <a class="anchor" href="#4%e8%a1%b0%e5%87%8f-%e6%9b%b2%e7%ba%bf">#</a>
+</h3>
+<img src="/images/blender/6/64.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="5衰减-曲线-尖锐">
+  <strong>5.衰减-曲线-尖锐</strong>
+  <a class="anchor" href="#5%e8%a1%b0%e5%87%8f-%e6%9b%b2%e7%ba%bf-%e5%b0%96%e9%94%90">#</a>
+</h3>
+<img src="/images/blender/6/65.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){if(window.getSelection().toString())return;a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1基础操作"><strong>1.基础操作</strong></a>
+      <ul>
+        <li><a href="#1移动"><strong>1.移动</strong></a></li>
+        <li><a href="#2旋转"><strong>2.旋转</strong></a></li>
+        <li><a href="#3缩放"><strong>3.缩放</strong></a></li>
+        <li><a href="#4滑移"><strong>4.滑移</strong></a></li>
+        <li><a href="#5删除"><strong>5.删除</strong></a></li>
+        <li><a href="#6融并"><strong>6.融并</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#2连接顶点"><strong>2.连接顶点</strong></a>
+      <ul>
+        <li><a href="#1填充"><strong>1.填充</strong></a></li>
+        <li><a href="#2连接-f"><strong>2.连接-f</strong></a></li>
+        <li><a href="#3连接-j"><strong>3.连接-j</strong></a></li>
+        <li><a href="#4连接-k"><strong>4.连接-k</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#3合并顶点"><strong>3.合并顶点</strong></a>
+      <ul>
+        <li><a href="#1合并-多个顶点"><strong>1.合并-多个顶点</strong></a></li>
+        <li><a href="#2合并-自动"><strong>2.合并-自动</strong></a></li>
+        <li><a href="#3选中重叠顶点"><strong>3.选中重叠顶点</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#4顶点倒角"><strong>4.顶点倒角</strong></a>
+      <ul>
+        <li><a href="#1参数-宽度"><strong>1.参数-宽度</strong></a></li>
+        <li><a href="#2参数-段数"><strong>2.参数-段数</strong></a></li>
+        <li><a href="#3参数-形状"><strong>3.参数-形状</strong></a></li>
+        <li><a href="#4倒角-两边"><strong>4.倒角-两边</strong></a></li>
+        <li><a href="#5倒角-三边"><strong>5.倒角-三边</strong></a></li>
+        <li><a href="#6倒角-四边"><strong>6.倒角-四边</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#5顶点挤出"><strong>5.顶点挤出</strong></a>
+      <ul>
+        <li><a href="#1挤出"><strong>1.挤出</strong></a></li>
+        <li><a href="#2扩展"><strong>2.扩展</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#6衰减编辑"><strong>6.衰减编辑</strong></a>
+      <ul>
+        <li><a href="#1非衰减"><strong>1.非衰减</strong></a></li>
+        <li><a href="#2衰减"><strong>2.衰减</strong></a></li>
+        <li><a href="#3衰减-半径"><strong>3.衰减-半径</strong></a></li>
+        <li><a href="#4衰减-曲线"><strong>4.衰减-曲线</strong></a></li>
+        <li><a href="#5衰减-曲线-尖锐"><strong>5.衰减-曲线-尖锐</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

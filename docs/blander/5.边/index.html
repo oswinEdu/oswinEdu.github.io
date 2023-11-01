@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="边 #  1.边细分 #   右键细分 | 菜单/边/细分(编辑模式)
+ 一条边分割成若干条边
+2.边滑移 #   菜单/边/滑移边线(编辑模式) 快捷键 gg
+ 沿轨道滑移
+3.边融并 #   右键/融并边 快捷键 ctrl&#43;x
+ 仅删掉边
+4.边删除 #  边所在的面也会被删除
+5.边倒角 #  快捷键 ctrl&#43;b
+1.倒角参数-宽度 #  2.倒角参数-弧度 #  3.倒角参数-凹凸 #  4.倒角例1 #  5.倒角例2 #  6.环切 #  上下两个环边内进行分割
+1.滑移 #  默认环切上下环中间，可滑动调整位置
+2.切割次数 #  上下两环均等分
+3.平滑度 #  沿着环切线，向内凹进或向外凸出">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="边 #  1.边细分 #   右键细分 | 菜单/边/细分(编辑模式)
+ 一条边分割成若干条边
+2.边滑移 #   菜单/边/滑移边线(编辑模式) 快捷键 gg
+ 沿轨道滑移
+3.边融并 #   右键/融并边 快捷键 ctrl&#43;x
+ 仅删掉边
+4.边删除 #  边所在的面也会被删除
+5.边倒角 #  快捷键 ctrl&#43;b
+1.倒角参数-宽度 #  2.倒角参数-弧度 #  3.倒角参数-凹凸 #  4.倒角例1 #  5.倒角例2 #  6.环切 #  上下两个环边内进行分割
+1.滑移 #  默认环切上下环中间，可滑动调整位置
+2.切割次数 #  上下两环均等分
+3.平滑度 #  沿着环切线，向内凹进或向外凸出" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://oswinedu.github.io/docs/blander/5.%E8%BE%B9/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2023-10-29T23:21:04+08:00" />
+<meta property="article:modified_time" content="2023-10-29T23:21:04+08:00" />
+
+<title>5.边 | 一休笔记</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="stylesheet" href="/book.min.33a48f5432973b8ff9a82679d9e45d67f2c15d4399bd2829269455cfe390b5e8.css" integrity="sha256-M6SPVDKXO4/5qCZ52eRdZ/LBXUOZvSgpJpRVz&#43;OQteg=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.98838bc52c25b7dfec296f1bd9da07e0c920a4b8f85cc15eb92eccfa32b16eff.js" integrity="sha256-mIOLxSwlt9/sKW8b2doH4MkgpLj4XMFeuS7M&#43;jKxbv8=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>一休笔记</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a861fa792a7a37b9fce8a64f6c3bc0da" class="toggle" checked />
+    <label for="section-a861fa792a7a37b9fce8a64f6c3bc0da" class="flex justify-between">
+      <a href="/docs/blander/" class="">Blander</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE/" class="">常用设置</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/%E5%B7%A5%E4%BD%9C%E5%8C%BA/" class="">工作区</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/1.%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/" class="">1.基础操作</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/2.%E6%B8%B8%E6%A0%87%E5%8E%9F%E7%82%B9/" class="">2.游标原点</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/3.%E6%A8%A1%E5%9E%8B/" class="">3.模型</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/4.%E9%9D%A2/" class="">4.面</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/5.%E8%BE%B9/" class="active">5.边</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/6.%E7%82%B9/" class="">6.点</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/10.%E5%BD%A2%E7%8A%B6/" class="">10.形状</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/23.%E6%9D%90%E8%B4%A8/" class="">23.材质</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/example/" class="">Example Site</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/table-of-contents/" class="">Table of Contents</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/table-of-contents/with-toc/" class="">With ToC</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/table-of-contents/without-toc/" class="">Without ToC</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4e46b01272d410b3a99461d79326ddf4" class="toggle"  />
+    <label for="section-4e46b01272d410b3a99461d79326ddf4" class="flex justify-between">
+      <a role="button" class="">Collapsed</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/collapsed/3rd-level/" class="">3rd Level</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/collapsed/3rd-level/4th-level/" class="">4th Level</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Shortcodes</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/buttons/" class="">Buttons</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/columns/" class="">Columns</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/details/" class="">Details</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/expand/" class="">Expand</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/hints/" class="">Hints</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/katex/" class="">Katex</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/mermaid/" class="">Mermaid</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d3fc1bf6d66cd84b896a0af9f40cb1d5" class="toggle"  />
+    <label for="section-d3fc1bf6d66cd84b896a0af9f40cb1d5" class="flex justify-between">
+      <a href="/docs/shortcodes/section/" class="">Section</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/section/first-page/" class="">First Page</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/section/second-page/" class="">Second Page</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/tabs/" class="">Tabs</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/"  >
+        Blog
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>5.边</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1边细分"><strong>1.边细分</strong></a></li>
+    <li><a href="#2边滑移"><strong>2.边滑移</strong></a></li>
+    <li><a href="#3边融并"><strong>3.边融并</strong></a></li>
+    <li><a href="#4边删除"><strong>4.边删除</strong></a></li>
+    <li><a href="#5边倒角"><strong>5.边倒角</strong></a>
+      <ul>
+        <li><a href="#1倒角参数-宽度"><strong>1.倒角参数-宽度</strong></a></li>
+        <li><a href="#2倒角参数-弧度"><strong>2.倒角参数-弧度</strong></a></li>
+        <li><a href="#3倒角参数-凹凸"><strong>3.倒角参数-凹凸</strong></a></li>
+        <li><a href="#4倒角例1"><strong>4.倒角例1</strong></a></li>
+        <li><a href="#5倒角例2"><strong>5.倒角例2</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#6环切"><strong>6.环切</strong></a>
+      <ul>
+        <li><a href="#1滑移"><strong>1.滑移</strong></a></li>
+        <li><a href="#2切割次数"><strong>2.切割次数</strong></a></li>
+        <li><a href="#3平滑度"><strong>3.平滑度</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#7循环边"><strong>7.循环边</strong></a></li>
+    <li><a href="#8并排边"><strong>8.并排边</strong></a></li>
+    <li><a href="#9卡线"><strong>9.卡线</strong></a>
+      <ul>
+        <li><a href="#1没有卡线效果"><strong>1.没有卡线效果</strong></a></li>
+        <li><a href="#2有卡线效果"><strong>2.有卡线效果</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#10法向收缩"><strong>10.法向收缩</strong></a></li>
+    <li><a href="#11四边形优势"><strong>11.四边形优势</strong></a></li>
+    <li><a href="#12桥接循环边"><strong>12.桥接循环边</strong></a>
+      <ul>
+        <li><a href="#14边和16边桥接"><strong>1.4边和16边桥接</strong></a></li>
+        <li><a href="#216边和16边桥接"><strong>2.16边和16边桥接</strong></a></li>
+        <li><a href="#3桥接应用-打洞"><strong>3.桥接应用-打洞</strong></a></li>
+        <li><a href="#4桥接应用-对接"><strong>4.桥接应用-对接</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="边">
+  <strong>边</strong>
+  <a class="anchor" href="#%e8%be%b9">#</a>
+</h1>
+<h2 id="1边细分">
+  <strong>1.边细分</strong>
+  <a class="anchor" href="#1%e8%be%b9%e7%bb%86%e5%88%86">#</a>
+</h2>
+<blockquote>
+<p>右键细分 | <code>菜单/边/细分</code>(编辑模式)</p>
+</blockquote>
+<p>一条边分割成若干条边</p>
+<img src="/images/blender/5/1.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h2 id="2边滑移">
+  <strong>2.边滑移</strong>
+  <a class="anchor" href="#2%e8%be%b9%e6%bb%91%e7%a7%bb">#</a>
+</h2>
+<blockquote>
+<p><code>菜单/边/滑移边线</code>(编辑模式) 快捷键 gg</p>
+</blockquote>
+<p>沿轨道滑移</p>
+<img src="/images/blender/5/2.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h2 id="3边融并">
+  <strong>3.边融并</strong>
+  <a class="anchor" href="#3%e8%be%b9%e8%9e%8d%e5%b9%b6">#</a>
+</h2>
+<blockquote>
+<p><code>右键/融并边</code> 快捷键 ctrl+x</p>
+</blockquote>
+<p>仅删掉边</p>
+<img src="/images/blender/5/3.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h2 id="4边删除">
+  <strong>4.边删除</strong>
+  <a class="anchor" href="#4%e8%be%b9%e5%88%a0%e9%99%a4">#</a>
+</h2>
+<p>边所在的面也会被删除</p>
+<img src="/images/blender/5/4.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h2 id="5边倒角">
+  <strong>5.边倒角</strong>
+  <a class="anchor" href="#5%e8%be%b9%e5%80%92%e8%a7%92">#</a>
+</h2>
+<p>快捷键 ctrl+b</p>
+<img src="/images/blender/5/51.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="1倒角参数-宽度">
+  <strong>1.倒角参数-宽度</strong>
+  <a class="anchor" href="#1%e5%80%92%e8%a7%92%e5%8f%82%e6%95%b0-%e5%ae%bd%e5%ba%a6">#</a>
+</h3>
+<img src="/images/blender/5/52.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="2倒角参数-弧度">
+  <strong>2.倒角参数-弧度</strong>
+  <a class="anchor" href="#2%e5%80%92%e8%a7%92%e5%8f%82%e6%95%b0-%e5%bc%a7%e5%ba%a6">#</a>
+</h3>
+<img src="/images/blender/5/53.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="3倒角参数-凹凸">
+  <strong>3.倒角参数-凹凸</strong>
+  <a class="anchor" href="#3%e5%80%92%e8%a7%92%e5%8f%82%e6%95%b0-%e5%87%b9%e5%87%b8">#</a>
+</h3>
+<img src="/images/blender/5/54.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="4倒角例1">
+  <strong>4.倒角例1</strong>
+  <a class="anchor" href="#4%e5%80%92%e8%a7%92%e4%be%8b1">#</a>
+</h3>
+<img src="/images/blender/5/55.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="5倒角例2">
+  <strong>5.倒角例2</strong>
+  <a class="anchor" href="#5%e5%80%92%e8%a7%92%e4%be%8b2">#</a>
+</h3>
+<img src="/images/blender/5/56.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h2 id="6环切">
+  <strong>6.环切</strong>
+  <a class="anchor" href="#6%e7%8e%af%e5%88%87">#</a>
+</h2>
+<p>上下两个环边内进行分割</p>
+<img src="/images/blender/5/61.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="1滑移">
+  <strong>1.滑移</strong>
+  <a class="anchor" href="#1%e6%bb%91%e7%a7%bb">#</a>
+</h3>
+<p>默认环切上下环中间，可滑动调整位置</p>
+<img src="/images/blender/5/62.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="2切割次数">
+  <strong>2.切割次数</strong>
+  <a class="anchor" href="#2%e5%88%87%e5%89%b2%e6%ac%a1%e6%95%b0">#</a>
+</h3>
+<p>上下两环均等分</p>
+<img src="/images/blender/5/63.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="3平滑度">
+  <strong>3.平滑度</strong>
+  <a class="anchor" href="#3%e5%b9%b3%e6%bb%91%e5%ba%a6">#</a>
+</h3>
+<p>沿着环切线，向内凹进或向外凸出</p>
+<img src="/images/blender/5/64.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h2 id="7循环边">
+  <strong>7.循环边</strong>
+  <a class="anchor" href="#7%e5%be%aa%e7%8e%af%e8%be%b9">#</a>
+</h2>
+<p><code>选择/选择循环/循环边</code> 有快捷键</p>
+<p>选择一条边，在选择循环边，一圈边都会被选中</p>
+<img src="/images/blender/5/70.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h2 id="8并排边">
+  <strong>8.并排边</strong>
+  <a class="anchor" href="#8%e5%b9%b6%e6%8e%92%e8%be%b9">#</a>
+</h2>
+<p><code>选择/选择循环/并排边</code>  有快捷键</p>
+<p>选择一条边，在选择并排边，并排所有边都会被选中</p>
+<img src="/images/blender/5/80.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h2 id="9卡线">
+  <strong>9.卡线</strong>
+  <a class="anchor" href="#9%e5%8d%a1%e7%ba%bf">#</a>
+</h2>
+<p>加了一个循环边或者边卡了缩放的地方</p>
+<h3 id="1没有卡线效果">
+  <strong>1.没有卡线效果</strong>
+  <a class="anchor" href="#1%e6%b2%a1%e6%9c%89%e5%8d%a1%e7%ba%bf%e6%95%88%e6%9e%9c">#</a>
+</h3>
+<img src="/images/blender/5/91.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="2有卡线效果">
+  <strong>2.有卡线效果</strong>
+  <a class="anchor" href="#2%e6%9c%89%e5%8d%a1%e7%ba%bf%e6%95%88%e6%9e%9c">#</a>
+</h3>
+<img src="/images/blender/5/92.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h2 id="10法向收缩">
+  <strong>10.法向收缩</strong>
+  <a class="anchor" href="#10%e6%b3%95%e5%90%91%e6%94%b6%e7%bc%a9">#</a>
+</h2>
+<img src="/images/blender/5/101.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h2 id="11四边形优势">
+  <strong>11.四边形优势</strong>
+  <a class="anchor" href="#11%e5%9b%9b%e8%be%b9%e5%bd%a2%e4%bc%98%e5%8a%bf">#</a>
+</h2>
+<img src="/images/blender/5/111.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<img src="/images/blender/5/112.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<img src="/images/blender/5/113.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<img src="/images/blender/5/114.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h2 id="12桥接循环边">
+  <strong>12.桥接循环边</strong>
+  <a class="anchor" href="#12%e6%a1%a5%e6%8e%a5%e5%be%aa%e7%8e%af%e8%be%b9">#</a>
+</h2>
+<p>左上角菜单栏 <code>边/桥接循环边</code></p>
+<img src="/images/blender/5/121.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="14边和16边桥接">
+  <strong>1.4边和16边桥接</strong>
+  <a class="anchor" href="#14%e8%be%b9%e5%92%8c16%e8%be%b9%e6%a1%a5%e6%8e%a5">#</a>
+</h3>
+<img src="/images/blender/5/122.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="216边和16边桥接">
+  <strong>2.16边和16边桥接</strong>
+  <a class="anchor" href="#216%e8%be%b9%e5%92%8c16%e8%be%b9%e6%a1%a5%e6%8e%a5">#</a>
+</h3>
+<img src="/images/blender/5/123.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="3桥接应用-打洞">
+  <strong>3.桥接应用-打洞</strong>
+  <a class="anchor" href="#3%e6%a1%a5%e6%8e%a5%e5%ba%94%e7%94%a8-%e6%89%93%e6%b4%9e">#</a>
+</h3>
+<p>先删掉上下两个面</p>
+<img src="/images/blender/5/124.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="4桥接应用-对接">
+  <strong>4.桥接应用-对接</strong>
+  <a class="anchor" href="#4%e6%a1%a5%e6%8e%a5%e5%ba%94%e7%94%a8-%e5%af%b9%e6%8e%a5">#</a>
+</h3>
+<p>连接两个模型</p>
+<img src="/images/blender/5/125.png" width="40%" height="40%" title="Twitter: {{.}}" alt="Twitter">
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){if(window.getSelection().toString())return;a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1边细分"><strong>1.边细分</strong></a></li>
+    <li><a href="#2边滑移"><strong>2.边滑移</strong></a></li>
+    <li><a href="#3边融并"><strong>3.边融并</strong></a></li>
+    <li><a href="#4边删除"><strong>4.边删除</strong></a></li>
+    <li><a href="#5边倒角"><strong>5.边倒角</strong></a>
+      <ul>
+        <li><a href="#1倒角参数-宽度"><strong>1.倒角参数-宽度</strong></a></li>
+        <li><a href="#2倒角参数-弧度"><strong>2.倒角参数-弧度</strong></a></li>
+        <li><a href="#3倒角参数-凹凸"><strong>3.倒角参数-凹凸</strong></a></li>
+        <li><a href="#4倒角例1"><strong>4.倒角例1</strong></a></li>
+        <li><a href="#5倒角例2"><strong>5.倒角例2</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#6环切"><strong>6.环切</strong></a>
+      <ul>
+        <li><a href="#1滑移"><strong>1.滑移</strong></a></li>
+        <li><a href="#2切割次数"><strong>2.切割次数</strong></a></li>
+        <li><a href="#3平滑度"><strong>3.平滑度</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#7循环边"><strong>7.循环边</strong></a></li>
+    <li><a href="#8并排边"><strong>8.并排边</strong></a></li>
+    <li><a href="#9卡线"><strong>9.卡线</strong></a>
+      <ul>
+        <li><a href="#1没有卡线效果"><strong>1.没有卡线效果</strong></a></li>
+        <li><a href="#2有卡线效果"><strong>2.有卡线效果</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#10法向收缩"><strong>10.法向收缩</strong></a></li>
+    <li><a href="#11四边形优势"><strong>11.四边形优势</strong></a></li>
+    <li><a href="#12桥接循环边"><strong>12.桥接循环边</strong></a>
+      <ul>
+        <li><a href="#14边和16边桥接"><strong>1.4边和16边桥接</strong></a></li>
+        <li><a href="#216边和16边桥接"><strong>2.16边和16边桥接</strong></a></li>
+        <li><a href="#3桥接应用-打洞"><strong>3.桥接应用-打洞</strong></a></li>
+        <li><a href="#4桥接应用-对接"><strong>4.桥接应用-对接</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
