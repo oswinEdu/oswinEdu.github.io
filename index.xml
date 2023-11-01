@@ -15,7 +15,7 @@
       <guid>https://oswinedu.github.io/docs/blander/%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE/</guid>
       <description>常用设置 #  1.更改快捷键 #   Blender编好设置/键位映射
  1.平移工作空间-常用 #   设置后 cmd + 鼠标左键
- 2.常用设置 #  1.围绕选择物体选择-常用 #   Blender编好设置/视图切换/围绕选择物体旋转(勾选)
+ 2.常用设置 #  1.围绕选择物体旋转-常用 #   Blender编好设置/视图切换/围绕选择物体旋转(勾选)
  2.显示模型边界框 #   3.视图叠加层 #  1.显示统计信息-常用 #  2.显示面法向 #  3.面法向长度 #  4.区分正面和背面 #  面朝向
  正面蓝色 背面红色   4.视图着色方式 #  1.背面剔除 #  从背面看透明
  5.编好设置-界面 #  1.场景统计数据 #  </description>
@@ -107,7 +107,8 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <description>游标|原点 #  1.游标 #  模型的出生点
 1.移动-鼠标 #  shift + 鼠标右键
 2.移动-吸附 #  把游标吸附到模型某个顶点
- 切换-编辑模式 选择点模式 左上角网格 网格/吸附/游标到选中项  3.隐藏游标附 #   2.模型原点 #  移动、旋转、缩放 以原点为基点
+ 切换-编辑模式 选择点模式 左上角网格 网格/吸附/游标到选中项  3.移动-设置 #  物体模式右键/吸附
+3.隐藏游标附 #   2.模型原点 #  移动、旋转、缩放 以原点为基点
 1.移动-设置 #  选中模型-&amp;gt;右键
 2.移动-吸附游标 #  先设置游标位置, 如上图选择原点-&amp;gt;3d游标</description>
     </item>
@@ -134,8 +135,10 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <guid>https://oswinedu.github.io/docs/blander/4.%E9%9D%A2/</guid>
       <description>面 #  1.面细分 #   把一个面分割成若干个面 本质是对边的细分，一般针对四边形  1.细分后形成多个面 #  2.右键细分 #  3.不能细分 #   2.挤出面 #  快捷键e, 也可左边工具栏挤出工具
 1.向外挤出 #  2.向内挤出 #  3.多个面挤出 #  4.沿法向挤出 #  5.沿xyz挤出 #   3.内插面 #  快捷键i, 也可左边工具栏挤出工具
-1.内插参数1 #  2.内插参数2 #  3.内插参数3 #  4.内插参数4 #  5.内插参数5 #   4.尖分面 #  从面的中心连接到每个顶点
- 5.融并面 #  将多个面合并成一个面</description>
+1.参数-厚度 #  2.参数-选择外侧 #  3.参数-选择外侧-拉出 #  4.参数-各面 #  两个面不影响
+5.参数-外插 #  不能勾选 各面
+ 4.尖分面 #  从面的中心连接到每个顶点
+ 5.</description>
     </item>
     
     <item>
@@ -198,7 +201,12 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <pubDate>Sun, 29 Oct 2023 23:21:04 +0800</pubDate>
       
       <guid>https://oswinedu.github.io/docs/blander/23.%E6%9D%90%E8%B4%A8/</guid>
-      <description>材质 #  </description>
+      <description>材质 #  描述物体的表面性质
+ 基础色 金属/非金属 粗糙度、透光度 凹凸细节  1.材质 #  1.添加 #  2.面指定材质 #   2.关联材质 #  1.金属材质 #  2.关联材质 #  一个材质可以被多个模型使用
+3.批量关联 #  选中多个面, 指定某个材质
+ 3.更多操作 #  1.材质清单 #  查看有哪些材质
+2.复制材质 #  复制一份只修改某几个参数
+3.颜色 #  </description>
     </item>
     
     <item>
