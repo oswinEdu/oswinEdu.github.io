@@ -168,5 +168,15 @@
 3.颜色 #  </description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://oswinedu.github.io/docs/blander/24.%E7%9D%80%E8%89%B2%E5%99%A8/</link>
+      <pubDate>Sun, 29 Oct 2023 23:21:04 +0800</pubDate>
+      
+      <guid>https://oswinedu.github.io/docs/blander/24.%E7%9D%80%E8%89%B2%E5%99%A8/</guid>
+      <description>着色器(shader) #  负责给物体表面着色，本质是一段程序
+1.着色器算法 #  1.内置着色器 #  2.内置着色器-光泽BSDF #   2.着色器编辑器 #  1.打开着色器窗口 #  2.着色器连接材质 #  3.图片着色器连接材质 #  </description>
+    </item>
+    
   </channel>
 </rss>
