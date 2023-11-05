@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="异步 #  1.Unity异步 #  缺点
+  没有返回值 依赖 GameObject   特点
+  Unity本身是单线程运行的, gameObject不是激活状态, 对应的副线程不会执行 Unity主线程里的副线程, 主线程执行完渲染, 副线程执行, Coroutine的本质是Unity在主线程上模拟了多线程 需要在迭代器中加入yield return让副线程能够跳出    代码 ...  StartCoroutine(Func1()); // 1.gameObject开启副线程, 主线程执行完让步给副线程 Func1  public IEnumerator Func1() { yield return new WaitForSeconds(2f); // 2.副线程让步给主线程, 2秒后主线程执行完, 再执行副线程  GetComponent&lt;Transform&gt;().gameObject.SetActive(false); // 3.设置成 false, 执行完主线程不再执行 gameObject 里的副线程  yield return new WaitForSeconds(2f);// 4.让步给主线程  GetComponent&lt;Transform&gt;().gameObject.SetActive(true); // 5.已经让步给主线程, gameObject不是激活状态, 不再让步给此 gameObject 副线程 } // 等待值 ResLoadMgr.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="异步 #  1.Unity异步 #  缺点
+  没有返回值 依赖 GameObject   特点
+  Unity本身是单线程运行的, gameObject不是激活状态, 对应的副线程不会执行 Unity主线程里的副线程, 主线程执行完渲染, 副线程执行, Coroutine的本质是Unity在主线程上模拟了多线程 需要在迭代器中加入yield return让副线程能够跳出    代码 ...  StartCoroutine(Func1()); // 1.gameObject开启副线程, 主线程执行完让步给副线程 Func1  public IEnumerator Func1() { yield return new WaitForSeconds(2f); // 2.副线程让步给主线程, 2秒后主线程执行完, 再执行副线程  GetComponent&lt;Transform&gt;().gameObject.SetActive(false); // 3.设置成 false, 执行完主线程不再执行 gameObject 里的副线程  yield return new WaitForSeconds(2f);// 4.让步给主线程  GetComponent&lt;Transform&gt;().gameObject.SetActive(true); // 5.已经让步给主线程, gameObject不是激活状态, 不再让步给此 gameObject 副线程 } // 等待值 ResLoadMgr." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://oswinedu.github.io/docs/unity/%E5%BC%82%E6%AD%A5/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2023-10-29T23:21:04+08:00" />
+<meta property="article:modified_time" content="2023-10-29T23:21:04+08:00" />
+
+<title>异步 | 一休笔记</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="stylesheet" href="/book.min.33a48f5432973b8ff9a82679d9e45d67f2c15d4399bd2829269455cfe390b5e8.css" integrity="sha256-M6SPVDKXO4/5qCZ52eRdZ/LBXUOZvSgpJpRVz&#43;OQteg=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.45c1f0573725d2eda28d2ee167defc33ac3e2b39ec2ba2d6b8af4d4542a96f94.js" integrity="sha256-RcHwVzcl0u2ijS7hZ978M6w&#43;KznsK6LWuK9NRUKpb5Q=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>一休笔记</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a861fa792a7a37b9fce8a64f6c3bc0da" class="toggle"  />
+    <label for="section-a861fa792a7a37b9fce8a64f6c3bc0da" class="flex justify-between">
+      <a href="/docs/blander/" class="">Blander</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE/" class="">常用设置</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/%E5%B7%A5%E4%BD%9C%E5%8C%BA/" class="">工作区</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/1.%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/" class="">1.基础操作</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/2.%E6%B8%B8%E6%A0%87%E5%8E%9F%E7%82%B9/" class="">2.游标原点</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/3.%E6%A8%A1%E5%9E%8B/" class="">3.模型</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/4.%E9%9D%A2/" class="">4.面</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/5.%E8%BE%B9/" class="">5.边</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/6.%E7%82%B9/" class="">6.点</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/10.%E5%BD%A2%E7%8A%B6/" class="">10.形状</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/23.%E6%9D%90%E8%B4%A8/" class="">23.材质</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/24.%E7%9D%80%E8%89%B2%E5%99%A8/" class="">24.着色器</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-66ec1d3f591a5234d78b26bb390aa62f" class="toggle" checked />
+    <label for="section-66ec1d3f591a5234d78b26bb390aa62f" class="flex justify-between">
+      <a role="button" class="">Unity</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/unity/%E5%BC%82%E6%AD%A5/" class="active">异步</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/example/" class="">Example Site</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/table-of-contents/" class="">Table of Contents</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/table-of-contents/with-toc/" class="">With ToC</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/table-of-contents/without-toc/" class="">Without ToC</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4e46b01272d410b3a99461d79326ddf4" class="toggle"  />
+    <label for="section-4e46b01272d410b3a99461d79326ddf4" class="flex justify-between">
+      <a role="button" class="">Collapsed</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/collapsed/3rd-level/" class="">3rd Level</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/collapsed/3rd-level/4th-level/" class="">4th Level</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Shortcodes</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/buttons/" class="">Buttons</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/columns/" class="">Columns</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/details/" class="">Details</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/expand/" class="">Expand</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/hints/" class="">Hints</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/katex/" class="">Katex</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/mermaid/" class="">Mermaid</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d3fc1bf6d66cd84b896a0af9f40cb1d5" class="toggle"  />
+    <label for="section-d3fc1bf6d66cd84b896a0af9f40cb1d5" class="flex justify-between">
+      <a href="/docs/shortcodes/section/" class="">Section</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/section/first-page/" class="">First Page</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/section/second-page/" class="">Second Page</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/tabs/" class="">Tabs</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/"  >
+        Blog
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>异步</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1unity异步"><strong>1.Unity异步</strong></a></li>
+    <li><a href="#2c异步"><strong>2.C#异步</strong></a></li>
+    <li><a href="#3unitask"><strong>3.UniTask</strong></a></li>
+    <li><a href="#4thread"><strong>4.Thread</strong></a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="异步">
+  <strong>异步</strong>
+  <a class="anchor" href="#%e5%bc%82%e6%ad%a5">#</a>
+</h1>
+<h2 id="1unity异步">
+  <strong>1.Unity异步</strong>
+  <a class="anchor" href="#1unity%e5%bc%82%e6%ad%a5">#</a>
+</h2>
+<p><strong>缺点</strong></p>
+<blockquote>
+<ol>
+<li>没有返回值</li>
+<li>依赖 GameObject</li>
+</ol>
+</blockquote>
+<p><strong>特点</strong></p>
+<blockquote>
+<ol>
+<li>Unity本身是单线程运行的, gameObject不是激活状态, 对应的副线程不会执行</li>
+<li>Unity主线程里的副线程, 主线程执行完渲染, 副线程执行, Coroutine的本质是Unity在主线程上模拟了多线程</li>
+<li>需要在迭代器中加入yield return让副线程能够跳出</li>
+</ol>
+</blockquote>
+
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>代码</span>
+      <span>...</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#">StartCoroutine(Func1()); <span style="color:#75715e">// 1.gameObject开启副线程, 主线程执行完让步给副线程 Func1
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">public</span> IEnumerator Func1()
+{
+    <span style="color:#66d9ef">yield</span> <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> WaitForSeconds(<span style="color:#ae81ff">2f</span>); <span style="color:#75715e">// 2.副线程让步给主线程, 2秒后主线程执行完, 再执行副线程
+</span><span style="color:#75715e"></span>
+    GetComponent&lt;Transform&gt;().gameObject.SetActive(<span style="color:#66d9ef">false</span>); <span style="color:#75715e">// 3.设置成 false, 执行完主线程不再执行 gameObject 里的副线程
+</span><span style="color:#75715e"></span>
+    <span style="color:#66d9ef">yield</span> <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> WaitForSeconds(<span style="color:#ae81ff">2f</span>);<span style="color:#75715e">// 4.让步给主线程
+</span><span style="color:#75715e"></span>    GetComponent&lt;Transform&gt;().gameObject.SetActive(<span style="color:#66d9ef">true</span>); <span style="color:#75715e">// 5.已经让步给主线程, gameObject不是激活状态, 不再让步给此 gameObject 副线程
+</span><span style="color:#75715e"></span>}
+
+
+<span style="color:#75715e">// 等待值
+</span><span style="color:#75715e"></span>ResLoadMgr.Instance.StartCoroutine(ShowShopList(<span style="color:#66d9ef">null</span>)); 
+
+<span style="color:#66d9ef">public</span> IEnumerator ShowShopList( <span style="color:#66d9ef">object</span> deskData)
+{
+    Debug.Log(<span style="color:#e6db74">&#34;ShowShopList 11&#34;</span>);
+    <span style="color:#66d9ef">yield</span> <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> WaitUntil(() =&gt; isGoNo);       <span style="color:#75715e">//isGoNo值false等待，等到变成true继续执行
+</span><span style="color:#75715e"></span>    Debug.Log(<span style="color:#e6db74">&#34;ShowShopList 22&#34;</span>);
+
+    <span style="color:#66d9ef">yield</span> <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> WaitForEndOfFrame();           <span style="color:#75715e">//等本帧末执行下面
+</span><span style="color:#75715e"></span>    Debug.Log(<span style="color:#e6db74">&#34;等本帧末执行&#34;</span>);
+
+    <span style="color:#66d9ef">yield</span> <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+    <span style="color:#66d9ef">yield</span> <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">6</span>;
+    <span style="color:#66d9ef">yield</span> <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">null</span>;                              <span style="color:#75715e">//下一帧往下执行
+</span><span style="color:#75715e"></span>    Debug.Log(<span style="color:#e6db74">&#34;下一帧往下执行&#34;</span>);
+
+    <span style="color:#66d9ef">yield</span> <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> WaitForSeconds(<span style="color:#ae81ff">1</span>);             <span style="color:#75715e">//等1秒后执行
+</span><span style="color:#75715e"></span>    Debug.Log(<span style="color:#e6db74">&#34;1秒后执行&#34;</span>);
+
+    <span style="color:#66d9ef">yield</span> <span style="color:#66d9ef">break</span>;                                    <span style="color:#75715e">//终止协程
+</span><span style="color:#75715e"></span>}
+
+<span style="color:#75715e">// UI 
+</span><span style="color:#75715e"></span>StartCoroutine(UpdateTimer(timerText, leftTime));
+<span style="color:#66d9ef">private</span> IEnumerator UpdateTimer(Text text, <span style="color:#66d9ef">int</span> leftTime) 
+{
+    <span style="color:#66d9ef">yield</span> <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> WaitForSeconds(<span style="color:#ae81ff">1</span>);
+    <span style="color:#66d9ef">yield</span> <span style="color:#66d9ef">return</span> UpdateTimer(text, leftTime);       <span style="color:#75715e">//循环调用
+</span><span style="color:#75715e"></span>}
+</code></pre></div>
+    </div>
+  </label>
+</div>
+
+<hr>
+<h2 id="2c异步">
+  <strong>2.C#异步</strong>
+  <a class="anchor" href="#2c%e5%bc%82%e6%ad%a5">#</a>
+</h2>
+<p><strong>缺点</strong></p>
+<blockquote>
+<ol>
+<li>导出 Webgl 不能使用</li>
+</ol>
+</blockquote>
+<p><strong>特点</strong></p>
+<blockquote>
+<ol>
+<li>Task是C#自带的多线程方法</li>
+<li>可以使用async void xx（）和async Task xx（）两种实现方法</li>
+<li>Task所创建的进程独立于Unity，也就是说Unity停止运行后Task不一定会立刻停止，因此可能造成找不到GameObject的报错</li>
+<li>需要使用awit 来跳出该进程（类似于协程的yield retrun）</li>
+<li>也可以使用await Task.Delay（int，单位为毫秒）来延迟运行，实现计时器的效果。</li>
+</ol>
+</blockquote>
+
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>代码</span>
+      <span>...</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">void</span> Func()
+{
+    <span style="color:#66d9ef">await</span> Task.Run(()=&gt; { Task.Delay(<span style="color:#ae81ff">2000</span>);});
+    GetComponent&lt;Transform&gt;().gameObject.SetActive(<span style="color:#66d9ef">false</span>);
+
+    <span style="color:#66d9ef">await</span> Task.Run(() =&gt; { Task.Delay(<span style="color:#ae81ff">2000</span>); });
+    GetComponent&lt;Transform&gt;().gameObject.SetActive(<span style="color:#66d9ef">true</span>);
+}
+
+</code></pre></div>
+    </div>
+  </label>
+</div>
+
+<hr>
+<h2 id="3unitask">
+  <strong>3.UniTask</strong>
+  <a class="anchor" href="#3unitask">#</a>
+</h2>
+
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>代码</span>
+      <span>...</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#"><span style="color:#66d9ef">using</span> UnityEngine;
+<span style="color:#66d9ef">using</span> UnityEngine.UI;
+<span style="color:#66d9ef">using</span> Cysharp.Threading.Tasks;<span style="color:#75715e">//关键包
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">mytest</span> : MonoBehaviour
+{
+    <span style="color:#66d9ef">public</span> Button myBtn;
+
+    <span style="color:#75715e">// Start is called before the first frame update
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">void</span> Start()
+    {
+
+        myBtn.onClick.AddListener(<span style="color:#66d9ef">async</span> ()=&gt; 
+        {
+            <span style="color:#75715e">//隔三秒启动发动机，发动机转4秒，然后停机
+</span><span style="color:#75715e"></span>            Debug.Log(<span style="color:#e6db74">$&#34;{Time.realtimeSinceStartup}: 预热三秒&#34;</span>);
+            <span style="color:#66d9ef">await</span> UniTask.Delay(System.TimeSpan.FromSeconds(<span style="color:#ae81ff">3</span>),ignoreTimeScale:<span style="color:#66d9ef">false</span>);
+            Debug.Log(<span style="color:#e6db74">$&#34;{Time.realtimeSinceStartup}: 启动发动机，发动机开始运转&#34;</span>);
+            <span style="color:#66d9ef">await</span> UniTask.Delay(System.TimeSpan.FromSeconds(<span style="color:#ae81ff">4</span>), ignoreTimeScale: <span style="color:#66d9ef">false</span>);
+            Debug.Log(<span style="color:#e6db74">$&#34;{Time.realtimeSinceStartup}: 发动机停机&#34;</span>);
+        });
+    }
+}
+</code></pre></div>
+    </div>
+  </label>
+</div>
+
+<hr>
+<h2 id="4thread">
+  <strong>4.Thread</strong>
+  <a class="anchor" href="#4thread">#</a>
+</h2>
+<p><strong>特点</strong></p>
+<blockquote>
+<ol>
+<li>Thread是真正的多线程，与Task、Coroutine有本质区别, 堵塞 Thread 线程不影响主线程</li>
+<li>Thread内只能进行传值，不能传递Unity内的Object</li>
+<li>可以在Thread内修改的：int、float、string、bool、struct、Vector3、List、Dictionary等</li>
+<li>使用Thread.Sleep(int，单位为毫秒)来延迟运行，实现计时器的效果。</li>
+</ol>
+</blockquote>
+
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>代码</span>
+      <span>...</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#"><span style="color:#66d9ef">void</span> Start()
+{
+    thread = <span style="color:#66d9ef">new</span> Thread(KeepAddValueThread);
+    thread.Start();
+}
+
+<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> Update()
+{
+    threadText.text = <span style="color:#e6db74">&#34;Thread:&#34;</span> + ThreadValue.ToString();
+}
+
+<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> KeepAddValueThread()
+{
+    <span style="color:#66d9ef">while</span> (ThreadValue &lt; <span style="color:#66d9ef">int</span>.MaxValue)
+    {
+        ThreadValue++;
+        Thread.Sleep(<span style="color:#ae81ff">1</span>);
+    }
+}
+</code></pre></div>
+    </div>
+  </label>
+</div>
+
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){if(window.getSelection().toString())return;a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1unity异步"><strong>1.Unity异步</strong></a></li>
+    <li><a href="#2c异步"><strong>2.C#异步</strong></a></li>
+    <li><a href="#3unitask"><strong>3.UniTask</strong></a></li>
+    <li><a href="#4thread"><strong>4.Thread</strong></a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unity on 一休笔记</title>
+    <link>https://oswinedu.github.io/docs/unity/</link>
+    <description>Recent content in Unity on 一休笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Oct 2023 23:21:04 +0800</lastBuildDate><atom:link href="https://oswinedu.github.io/docs/unity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://oswinedu.github.io/docs/unity/%E5%BC%82%E6%AD%A5/</link>
+      <pubDate>Sun, 29 Oct 2023 23:21:04 +0800</pubDate>
+      
+      <guid>https://oswinedu.github.io/docs/unity/%E5%BC%82%E6%AD%A5/</guid>
+      <description>异步 #  1.Unity异步 #  缺点
+  没有返回值 依赖 GameObject   特点
+  Unity本身是单线程运行的, gameObject不是激活状态, 对应的副线程不会执行 Unity主线程里的副线程, 主线程执行完渲染, 副线程执行, Coroutine的本质是Unity在主线程上模拟了多线程 需要在迭代器中加入yield return让副线程能够跳出    代码 ...  StartCoroutine(Func1()); // 1.gameObject开启副线程, 主线程执行完让步给副线程 Func1  public IEnumerator Func1() { yield return new WaitForSeconds(2f); // 2.副线程让步给主线程, 2秒后主线程执行完, 再执行副线程  GetComponent&amp;lt;Transform&amp;gt;().gameObject.SetActive(false); // 3.设置成 false, 执行完主线程不再执行 gameObject 里的副线程  yield return new WaitForSeconds(2f);// 4.让步给主线程  GetComponent&amp;lt;Transform&amp;gt;().gameObject.SetActive(true); // 5.已经让步给主线程, gameObject不是激活状态, 不再让步给此 gameObject 副线程 } // 等待值 ResLoadMgr.</description>
+    </item>
+    
+  </channel>
+</rss>
