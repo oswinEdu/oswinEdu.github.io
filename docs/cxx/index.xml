@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C# on 一休笔记</title>
+    <link>https://oswinedu.github.io/docs/cxx/</link>
+    <description>Recent content in C# on 一休笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Oct 2023 23:21:04 +0800</lastBuildDate><atom:link href="https://oswinedu.github.io/docs/cxx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://oswinedu.github.io/docs/cxx/%E5%BA%8F%E5%88%97%E5%8C%96/</link>
+      <pubDate>Sun, 29 Oct 2023 23:21:04 +0800</pubDate>
+      
+      <guid>https://oswinedu.github.io/docs/cxx/%E5%BA%8F%E5%88%97%E5%8C%96/</guid>
+      <description>序列化 #  1.字符串创建类对象 #  string assemblyname = &amp;#34;&amp;#34;; // unity编辑器点击C#文件查看 如 Assembly-CSHarp.dll string name = &amp;#34;Stage.Main.MainModule&amp;#34;; // 命名空间.类名 string domain = &amp;#34;&amp;#34;;// Type type = Type.GetType($&amp;#34;{domain}{name},{assemblyname}&amp;#34;); // 根据包名 if (type != null) { var module = Activator.CreateInstance(type) as AkModule; } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://oswinedu.github.io/docs/cxx/%E6%B3%9B%E5%9E%8B/</link>
+      <pubDate>Sun, 29 Oct 2023 23:21:04 +0800</pubDate>
+      
+      <guid>https://oswinedu.github.io/docs/cxx/%E6%B3%9B%E5%9E%8B/</guid>
+      <description>泛型 #  1.new #  </description>
+    </item>
+    
+  </channel>
+</rss>
