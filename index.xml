@@ -22,6 +22,18 @@
     </item>
     
     <item>
+      <title></title>
+      <link>https://oswinedu.github.io/docs/high_1/%E9%9B%86%E5%90%88/%E9%9B%86%E5%90%88%E9%97%B4%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%85%B3%E7%B3%BB/</link>
+      <pubDate>Sun, 29 Oct 2023 23:21:04 +0800</pubDate>
+      
+      <guid>https://oswinedu.github.io/docs/high_1/%E9%9B%86%E5%90%88/%E9%9B%86%E5%90%88%E9%97%B4%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%85%B3%E7%B3%BB/</guid>
+      <description>集合间的基本关系 #  0.集合相等 #  1.空集 #  表示不包含任何元素的集合，用符号 ∅ 或 {} 表示
+ 例：x^2 = -1 组成的集合 任何数平方都大于等于0，x 无解, 不存在这样的集合所以是空集  2.子集 #  如果集合 A 中的每个元素都是集合 B 中的元素，那么集合 A 是集合 B 的子集，用符号 A ⊆ B 表示。
+  例1：集合A = {2 4 6} 集合B = {2 4 6 8 10} 集合A的每个元素集合B都有， 所以 集合A 是 集合B 的子集
+  例2：集合A = {2 4 6 8 10} 集合B = {2 4 6 8 10} 同样满足 集合 A 中的每个元素都是集合 B 中的元素, 所以 集合A 是 集合B 的子集。 同理集合 A 也是本身(集合A)的子集 同理集合 B 也是本身(集合B)的子集</description>
+    </item>
+    
+    <item>
       <title>With ToC</title>
       <link>https://oswinedu.github.io/docs/example/table-of-contents/with-toc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -29,6 +41,17 @@
       <guid>https://oswinedu.github.io/docs/example/table-of-contents/with-toc/</guid>
       <description>Caput vino delphine in tamen vias #  Cognita laeva illo fracta #  Lorem markdownum pavent auras, surgit nunc cingentibus libet Laomedonque que est. Pastor An arbor filia foedat, ne fugit aliter, per. Helicona illas et callida neptem est Oresitrophos caput, dentibus est venit. Tenet reddite famuli praesentem fortibus, quaeque vis foret si frondes gelidos gravidae circumtulit inpulit armenta nativum.
  Te at cruciabere vides rubentis manebo Maturuit in praetemptat ruborem ignara postquam habitasse Subitarum supplevit quoque fontesque venabula spretis modo Montis tot est mali quasque gravis Quinquennem domus arsit ipse Pellem turis pugnabant locavit  Natus quaerere #  Pectora et sine mulcere, coniuge dum tincta incurvae.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://oswinedu.github.io/docs/high_1/%E9%9B%86%E5%90%88/%E9%9B%86%E5%90%88%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/</link>
+      <pubDate>Sun, 29 Oct 2023 23:21:04 +0800</pubDate>
+      
+      <guid>https://oswinedu.github.io/docs/high_1/%E9%9B%86%E5%90%88/%E9%9B%86%E5%90%88%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/</guid>
+      <description>集合间的基本运算 #  1.并集 #    \[定义：设A和B是两个集合，它们的并集是包含A和B中所有元素的集合，记作A \cup BA∪B。\\ 表达式：A \cup B = \{x : x \in A \text{ 或 } x \in B\}A∪B={x:x∈A 或 x∈B} \\\]    例1：集合A = {2 4 6} 集合 B = {4 6 8 10}
+A ∪ B = {2 4 6 8 10} 集合里元素互异性，重复的 4 6 去掉
+  例2：集合A = {2 4 6} 集合B = {4 6 8 10} 集合C = {0 2}</description>
     </item>
     
     <item>
