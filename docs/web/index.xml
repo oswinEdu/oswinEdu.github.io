@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on 一休笔记</title>
+    <link>https://oswinedu.github.io/docs/web/</link>
+    <description>Recent content in Web on 一休笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Oct 2023 23:21:04 +0800</lastBuildDate><atom:link href="https://oswinedu.github.io/docs/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://oswinedu.github.io/docs/web/css/</link>
+      <pubDate>Sun, 29 Oct 2023 23:21:04 +0800</pubDate>
+      
+      <guid>https://oswinedu.github.io/docs/web/css/</guid>
+      <description>CSS #  测试
+1.常用属性 #  position 位置 relative absolute 父节点相对位置，子节点绝对位置可以重叠布局 background 背景 wheat coral lightpink width height right 可以指定大小 100px 10vh、也可以指定父类百分比 50% margin: 5px; 周边加 5px 框  2.锚点 #   代码 ...  &amp;lt;div class=&amp;#34;container&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;box1&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;box2&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; .container { display: flex; width: 500px; height: 100px; background-color: black; } // 距离左边 50px, 锚点中心点 .box1 { width: 100px; height: 30px; background-color: lightblue; margin-left: 50px; transform: translateX(-50%); } // 距离左边 50px, 锚点左边 .</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://oswinedu.github.io/docs/web/css-%E5%B8%83%E5%B1%80-demo/</link>
+      <pubDate>Sun, 29 Oct 2023 23:21:04 +0800</pubDate>
+      
+      <guid>https://oswinedu.github.io/docs/web/css-%E5%B8%83%E5%B1%80-demo/</guid>
+      <description>CSS-布局-grid #  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://oswinedu.github.io/docs/web/css-%E5%B8%83%E5%B1%80-flex/</link>
+      <pubDate>Sun, 29 Oct 2023 23:21:04 +0800</pubDate>
+      
+      <guid>https://oswinedu.github.io/docs/web/css-%E5%B8%83%E5%B1%80-flex/</guid>
+      <description>CSS-布局-flex #  参考
+参考
+1.flex #  flex-wrap: nowrap | wrap | wrap-reverse; wrap; 换行，第一行在上方 nowrap;不换行 wrap-reverse;换行，第一行在下方。 justify-content: flex-start | flex-end | center | space-between | space-around; flex-start（默认值）：左对齐 flex-end：右对齐 center： 居中 space-between：两端对齐，项目之间的间隔都相等。 space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍 align-items: flex-start | flex-end | center | baseline | stretch; flex-start：交叉轴的起点对齐。 flex-end：交叉轴的终点对齐。 center：交叉轴的中点对齐。 baseline: 项目的第一行文字的基线对齐。 stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。 align-content: flex-start | flex-end | center | space-between | space-around | stretch; 子节点-flex flex: 如果有多于宽度是否可扩大(1可以 0不可以) 如果宽度不足是否可缩小 初始宽度 1 1 150px 始终会占满所有宽度 子节点-flex-grow .</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://oswinedu.github.io/docs/web/css-%E5%B8%83%E5%B1%80-grid/</link>
+      <pubDate>Sun, 29 Oct 2023 23:21:04 +0800</pubDate>
+      
+      <guid>https://oswinedu.github.io/docs/web/css-%E5%B8%83%E5%B1%80-grid/</guid>
+      <description>CSS-布局-grid #  参考
+参考
+1.grid #  justify-items 水平位置 start end center align-items 垂直位置 start end center place-items 垂直-水平位置 place-items: start end 垂直start 水平end 可分成很多列 grid-template-columns 列 grid-template-columns: minmax(150px, 25%) 1fr; 第一列的宽度是minmax(150px, 25%) 最小宽度为150px，最大宽度为总宽度的25% 第二列为1fr，即所有剩余宽度 可分成很多行 grid-template-rows 行 grid-template-rows: auto 1fr auto; 第一部分 和第三部分 的高度都为auto，本来的内容高度；第二部分的高度为1fr，剩余的所有高度 grid-template 行 列 grid-template: auto 1fr auto / auto 1fr auto; </description>
+    </item>
+    
+  </channel>
+</rss>

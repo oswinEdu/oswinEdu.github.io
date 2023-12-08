@@ -7,5 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 29 Oct 2023 23:21:04 +0800</lastBuildDate><atom:link href="https://oswinedu.github.io/docs/unity/%E6%8F%92%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://oswinedu.github.io/docs/unity/%E6%8F%92%E4%BB%B6/textanimator/</link>
+      <pubDate>Sun, 29 Oct 2023 23:21:04 +0800</pubDate>
+      
+      <guid>https://oswinedu.github.io/docs/unity/%E6%8F%92%E4%BB%B6/textanimator/</guid>
+      <description>Text Animator #  api
+添加两个组件 TextAnimator TextAnimatorPlayer
+1.常用标签 #  动画演示
+&amp;#34;fade&amp;#34; &amp;lt;fade&amp;gt;我们把研究对象统称为元素&amp;lt;/fade&amp;gt; 显示之后消失 &amp;#34;speed&amp;#34; &amp;lt;speed=0.02&amp;gt;字体显示速度&amp;lt;speed=1&amp;gt;have fun bring 字体显示速度, speed 越小越慢 &amp;#34;shake&amp;#34; &amp;lt;shake&amp;gt;震动&amp;lt;/shake&amp;gt; &amp;#34;wiggle&amp;#34; &amp;lt;wiggle&amp;gt;晃动&amp;lt;/wiggle&amp;gt; &amp;#34;bounce&amp;#34; &amp;lt;bounce&amp;gt;Oh, how lucky&amp;lt;/bounce&amp;gt; &amp;#34;expl&amp;#34; &amp;lt;expl&amp;gt;分裂到处跳在回来&amp;lt;/expl&amp;gt; &amp;#34;rot&amp;#34; &amp;lt;rot&amp;gt;旋转&amp;lt;/rot&amp;gt; &amp;#34;swing&amp;#34; &amp;lt;swing&amp;gt;左右晃&amp;lt;/swing&amp;gt; &amp;#34;share&amp;#34; &amp;lt;share&amp;gt;像浪一样&amp;lt;/share&amp;gt; &amp;#34;rainb&amp;#34; &amp;lt;rainb&amp;gt;渲染彩色字&amp;lt;/rainb&amp;gt; &amp;#34;incr&amp;#34; &amp;lt;incr&amp;gt;&amp;lt;rainb&amp;gt;渲染颜色字体晃动&amp;lt;/rainb&amp;gt;&amp;lt;/incr&amp;gt; 2.富文本 #  &amp;#34;颜色&amp;#34; &amp;lt;color=red&amp;gt;Behaviors&amp;lt;/color&amp;gt; &amp;lt;#00ff00&amp;gt;Green text&amp;lt;/color&amp;gt; &amp;lt;mark=#ffff0040&amp;gt;阴影强调&amp;lt;/mark&amp;gt; &amp;#34;基础&amp;#34; &amp;lt;b&amp;gt;粗体&amp;lt;/b&amp;gt; &amp;lt;i&amp;gt;斜体&amp;lt;/i&amp;gt; &amp;lt;u&amp;gt;下划线&amp;lt;/u&amp;gt; &amp;lt;s&amp;gt;删除线&amp;lt;/s&amp;gt; &amp;lt;sup&amp;gt;上标&amp;lt;/sup&amp;gt; &amp;lt;sub&amp;gt;下标&amp;lt;/sub&amp;gt; &amp;lt;size=48&amp;gt;设置字体大小&amp;lt;/size&amp;gt; &amp;lt;size=+18&amp;gt;相对字体大小&amp;lt;/size&amp;gt; &amp;lt;size=-18&amp;gt;相对字体大小&amp;lt;/size&amp;gt; &amp;#34;偏移距离&amp;#34; &amp;lt;pos=5.5&amp;gt;Chara 3.事件 #  uiYuanSuText.onTextShowed.AddListener(delegate { AkLog.print(&amp;#34;展示完成回调&amp;#34;); }); uiYuanSuText.onTypewriterStart.AddListener(delegate { AkLog.</description>
+    </item>
+    
   </channel>
 </rss>

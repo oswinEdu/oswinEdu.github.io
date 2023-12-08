@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Text Animator #  api
+添加两个组件 TextAnimator TextAnimatorPlayer
+1.常用标签 #  动画演示
+&#34;fade&#34; &lt;fade&gt;我们把研究对象统称为元素&lt;/fade&gt; 显示之后消失 &#34;speed&#34; &lt;speed=0.02&gt;字体显示速度&lt;speed=1&gt;have fun bring 字体显示速度, speed 越小越慢 &#34;shake&#34; &lt;shake&gt;震动&lt;/shake&gt; &#34;wiggle&#34; &lt;wiggle&gt;晃动&lt;/wiggle&gt; &#34;bounce&#34; &lt;bounce&gt;Oh, how lucky&lt;/bounce&gt; &#34;expl&#34; &lt;expl&gt;分裂到处跳在回来&lt;/expl&gt; &#34;rot&#34; &lt;rot&gt;旋转&lt;/rot&gt; &#34;swing&#34; &lt;swing&gt;左右晃&lt;/swing&gt; &#34;share&#34; &lt;share&gt;像浪一样&lt;/share&gt; &#34;rainb&#34; &lt;rainb&gt;渲染彩色字&lt;/rainb&gt; &#34;incr&#34; &lt;incr&gt;&lt;rainb&gt;渲染颜色字体晃动&lt;/rainb&gt;&lt;/incr&gt; 2.富文本 #  &#34;颜色&#34; &lt;color=red&gt;Behaviors&lt;/color&gt; &lt;#00ff00&gt;Green text&lt;/color&gt; &lt;mark=#ffff0040&gt;阴影强调&lt;/mark&gt; &#34;基础&#34; &lt;b&gt;粗体&lt;/b&gt; &lt;i&gt;斜体&lt;/i&gt; &lt;u&gt;下划线&lt;/u&gt; &lt;s&gt;删除线&lt;/s&gt; &lt;sup&gt;上标&lt;/sup&gt; &lt;sub&gt;下标&lt;/sub&gt; &lt;size=48&gt;设置字体大小&lt;/size&gt; &lt;size=&#43;18&gt;相对字体大小&lt;/size&gt; &lt;size=-18&gt;相对字体大小&lt;/size&gt; &#34;偏移距离&#34; &lt;pos=5.5&gt;Chara 3.事件 #  uiYuanSuText.onTextShowed.AddListener(delegate { AkLog.print(&#34;展示完成回调&#34;); }); uiYuanSuText.onTypewriterStart.AddListener(delegate { AkLog.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="Text Animator #  api
+添加两个组件 TextAnimator TextAnimatorPlayer
+1.常用标签 #  动画演示
+&#34;fade&#34; &lt;fade&gt;我们把研究对象统称为元素&lt;/fade&gt; 显示之后消失 &#34;speed&#34; &lt;speed=0.02&gt;字体显示速度&lt;speed=1&gt;have fun bring 字体显示速度, speed 越小越慢 &#34;shake&#34; &lt;shake&gt;震动&lt;/shake&gt; &#34;wiggle&#34; &lt;wiggle&gt;晃动&lt;/wiggle&gt; &#34;bounce&#34; &lt;bounce&gt;Oh, how lucky&lt;/bounce&gt; &#34;expl&#34; &lt;expl&gt;分裂到处跳在回来&lt;/expl&gt; &#34;rot&#34; &lt;rot&gt;旋转&lt;/rot&gt; &#34;swing&#34; &lt;swing&gt;左右晃&lt;/swing&gt; &#34;share&#34; &lt;share&gt;像浪一样&lt;/share&gt; &#34;rainb&#34; &lt;rainb&gt;渲染彩色字&lt;/rainb&gt; &#34;incr&#34; &lt;incr&gt;&lt;rainb&gt;渲染颜色字体晃动&lt;/rainb&gt;&lt;/incr&gt; 2.富文本 #  &#34;颜色&#34; &lt;color=red&gt;Behaviors&lt;/color&gt; &lt;#00ff00&gt;Green text&lt;/color&gt; &lt;mark=#ffff0040&gt;阴影强调&lt;/mark&gt; &#34;基础&#34; &lt;b&gt;粗体&lt;/b&gt; &lt;i&gt;斜体&lt;/i&gt; &lt;u&gt;下划线&lt;/u&gt; &lt;s&gt;删除线&lt;/s&gt; &lt;sup&gt;上标&lt;/sup&gt; &lt;sub&gt;下标&lt;/sub&gt; &lt;size=48&gt;设置字体大小&lt;/size&gt; &lt;size=&#43;18&gt;相对字体大小&lt;/size&gt; &lt;size=-18&gt;相对字体大小&lt;/size&gt; &#34;偏移距离&#34; &lt;pos=5.5&gt;Chara 3.事件 #  uiYuanSuText.onTextShowed.AddListener(delegate { AkLog.print(&#34;展示完成回调&#34;); }); uiYuanSuText.onTypewriterStart.AddListener(delegate { AkLog." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://oswinedu.github.io/docs/unity/%E6%8F%92%E4%BB%B6/textanimator/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2023-10-29T23:21:04+08:00" />
+<meta property="article:modified_time" content="2023-10-29T23:21:04+08:00" />
+
+<title>Text Animator | 一休笔记</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="stylesheet" href="/book.min.33a48f5432973b8ff9a82679d9e45d67f2c15d4399bd2829269455cfe390b5e8.css" integrity="sha256-M6SPVDKXO4/5qCZ52eRdZ/LBXUOZvSgpJpRVz&#43;OQteg=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.85632b70dcf039e48b057e4437dd7827ecab52053a33d2094e9a5705743eacd9.js" integrity="sha256-hWMrcNzwOeSLBX5EN914J&#43;yrUgU6M9IJTppXBXQ&#43;rNk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>一休笔记</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a861fa792a7a37b9fce8a64f6c3bc0da" class="toggle"  />
+    <label for="section-a861fa792a7a37b9fce8a64f6c3bc0da" class="flex justify-between">
+      <a href="/docs/blander/" class="">Blander</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE/" class="">常用设置</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/%E5%B7%A5%E4%BD%9C%E5%8C%BA/" class="">工作区</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/1.%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/" class="">1.基础操作</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/2.%E6%B8%B8%E6%A0%87%E5%8E%9F%E7%82%B9/" class="">2.游标原点</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/3.%E6%A8%A1%E5%9E%8B/" class="">3.模型</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/4.%E9%9D%A2/" class="">4.面</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/5.%E8%BE%B9/" class="">5.边</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/6.%E7%82%B9/" class="">6.点</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/10.%E5%BD%A2%E7%8A%B6/" class="">10.形状</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/23.%E6%9D%90%E8%B4%A8/" class="">23.材质</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/24.%E7%9D%80%E8%89%B2%E5%99%A8/" class="">24.着色器</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f30be790aa0d0da5d927d6988a0aa1db" class="toggle"  />
+    <label for="section-f30be790aa0d0da5d927d6988a0aa1db" class="flex justify-between">
+      <a href="/docs/cxx/" class="">C#</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cxx/%E5%BA%8F%E5%88%97%E5%8C%96/" class="">序列化</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cxx/%E6%B3%9B%E5%9E%8B/" class="">泛型</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7beecf9e3235b2c1835e0ce256d0d2a9" class="toggle"  />
+    <label for="section-7beecf9e3235b2c1835e0ce256d0d2a9" class="flex justify-between">
+      <a href="/docs/high_1/" class="">High 1</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-440b633c2616448629c7b8b4ae340bea" class="toggle"  />
+    <label for="section-440b633c2616448629c7b8b4ae340bea" class="flex justify-between">
+      <a href="/docs/high_1/%E9%9B%86%E5%90%88/" class="">集合</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/high_1/%E9%9B%86%E5%90%88/%E9%9B%86%E5%90%88%E9%97%B4%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%85%B3%E7%B3%BB/" class="">集合间的基本关系</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/high_1/%E9%9B%86%E5%90%88/%E9%9B%86%E5%90%88%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/" class="">集合的基本运算</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3e0a33812d4be48b9a1ad7722d8a90cf" class="toggle"  />
+    <label for="section-3e0a33812d4be48b9a1ad7722d8a90cf" class="flex justify-between">
+      <a href="/docs/high_1/%E4%B8%80%E5%85%83%E4%BA%8C%E6%AC%A1%E5%87%BD%E6%95%B0/" class="">一元二次函数</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-66ec1d3f591a5234d78b26bb390aa62f" class="toggle" checked />
+    <label for="section-66ec1d3f591a5234d78b26bb390aa62f" class="flex justify-between">
+      <a href="/docs/unity/" class="">Unity</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/unity/%E5%BC%82%E6%AD%A5/" class="">异步</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bbde4172d50d263833d22747cee3ece0" class="toggle" checked />
+    <label for="section-bbde4172d50d263833d22747cee3ece0" class="flex justify-between">
+      <a href="/docs/unity/%E6%8F%92%E4%BB%B6/" class="">插件</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/unity/%E6%8F%92%E4%BB%B6/textanimator/" class="active">Text Animator</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bbf404e4b94d6101c7bf1ae47e3efc25" class="toggle"  />
+    <label for="section-bbf404e4b94d6101c7bf1ae47e3efc25" class="flex justify-between">
+      <a href="/docs/web/" class="">Web</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web/css/" class="">Css</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web/css-%E5%B8%83%E5%B1%80-demo/" class="">Css 布局 Demo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web/css-%E5%B8%83%E5%B1%80-flex/" class="">Css 布局 Flex</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web/css-%E5%B8%83%E5%B1%80-grid/" class="">Css 布局 Grid</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/example/" class="">Example Site</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/table-of-contents/" class="">Table of Contents</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/table-of-contents/with-toc/" class="">With ToC</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/table-of-contents/without-toc/" class="">Without ToC</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4e46b01272d410b3a99461d79326ddf4" class="toggle"  />
+    <label for="section-4e46b01272d410b3a99461d79326ddf4" class="flex justify-between">
+      <a role="button" class="">Collapsed</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/collapsed/3rd-level/" class="">3rd Level</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/collapsed/3rd-level/4th-level/" class="">4th Level</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Shortcodes</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/buttons/" class="">Buttons</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/columns/" class="">Columns</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/details/" class="">Details</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/expand/" class="">Expand</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/hints/" class="">Hints</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/katex/" class="">Katex</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/mermaid/" class="">Mermaid</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d3fc1bf6d66cd84b896a0af9f40cb1d5" class="toggle"  />
+    <label for="section-d3fc1bf6d66cd84b896a0af9f40cb1d5" class="flex justify-between">
+      <a href="/docs/shortcodes/section/" class="">Section</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/section/first-page/" class="">First Page</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/section/second-page/" class="">Second Page</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/tabs/" class="">Tabs</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/"  >
+        Blog
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Text Animator</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1常用标签"><strong>1.常用标签</strong></a></li>
+    <li><a href="#2富文本"><strong>2.富文本</strong></a></li>
+    <li><a href="#3事件"><strong>3.事件</strong></a></li>
+    <li><a href="#4代码-textanimatorplayer"><strong>4.代码-TextAnimatorPlayer</strong></a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="text-animator">
+  <strong>Text Animator</strong>
+  <a class="anchor" href="#text-animator">#</a>
+</h1>
+<p><a href="https://www.febucci.com/text-animator-unity/api/Febucci.UI.Effects.Tween.html">api</a></p>
+<p>添加两个组件 TextAnimator TextAnimatorPlayer</p>
+<h2 id="1常用标签">
+  <strong>1.常用标签</strong>
+  <a class="anchor" href="#1%e5%b8%b8%e7%94%a8%e6%a0%87%e7%ad%be">#</a>
+</h2>
+<p><a href="https://www.febucci.com/text-animator-unity/docs/built-in-effects-list/">动画演示</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#e6db74">&#34;fade&#34;</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">fade</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">我们把研究对象统称为元素</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/fade&gt;</span>
+    <span style="color:#a6e22e">显示之后消失</span>
+
+<span style="color:#e6db74">&#34;speed&#34;</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">speed</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0.02</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">字体显示速度</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">speed</span><span style="color:#f92672">=</span><span style="color:#ae81ff">1</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">have</span> <span style="color:#a6e22e">fun</span> <span style="color:#a6e22e">bring</span>
+    <span style="color:#a6e22e">字体显示速度</span>, <span style="color:#a6e22e">speed</span> <span style="color:#a6e22e">越小越慢</span>
+
+<span style="color:#e6db74">&#34;shake&#34;</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">shake</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">震动</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/shake&gt;</span>
+
+<span style="color:#e6db74">&#34;wiggle&#34;</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">wiggle</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">晃动</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/wiggle&gt;</span>
+
+<span style="color:#e6db74">&#34;bounce&#34;</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">bounce</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Oh</span>, <span style="color:#a6e22e">how</span> <span style="color:#a6e22e">lucky</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/bounce&gt;</span>
+
+<span style="color:#e6db74">&#34;expl&#34;</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">expl</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">分裂到处跳在回来</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/expl&gt;</span>
+
+<span style="color:#e6db74">&#34;rot&#34;</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">rot</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">旋转</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/rot&gt;</span>
+
+<span style="color:#e6db74">&#34;swing&#34;</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">swing</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">左右晃</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/swing&gt;</span>
+
+<span style="color:#e6db74">&#34;share&#34;</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">share</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">像浪一样</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/share&gt;</span>
+
+<span style="color:#e6db74">&#34;rainb&#34;</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">rainb</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">渲染彩色字</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/rainb&gt;</span>
+
+<span style="color:#e6db74">&#34;incr&#34;</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">incr</span><span style="color:#f92672">&gt;&lt;</span><span style="color:#a6e22e">rainb</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">渲染颜色字体晃动</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/rainb&gt;&lt;/incr&gt;</span>
+</code></pre></div><h2 id="2富文本">
+  <strong>2.富文本</strong>
+  <a class="anchor" href="#2%e5%af%8c%e6%96%87%e6%9c%ac">#</a>
+</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#e6db74">&#34;颜色&#34;</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">color</span><span style="color:#f92672">=</span><span style="color:#a6e22e">red</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Behaviors</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/color&gt;</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#ae81ff">00</span><span style="color:#a6e22e">ff00</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Green</span> <span style="color:#a6e22e">text</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/color&gt;</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">mark</span><span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">ffff0040</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">阴影强调</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/mark&gt;</span>
+
+<span style="color:#e6db74">&#34;基础&#34;</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">b</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">粗体</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/b&gt;</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">i</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">斜体</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/i&gt;</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">u</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">下划线</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/u&gt;</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">s</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">删除线</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/s&gt;</span>
+
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">sup</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">上标</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/sup&gt;</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">sub</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">下标</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/sub&gt;</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">size</span><span style="color:#f92672">=</span><span style="color:#ae81ff">48</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">设置字体大小</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/size&gt;</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">size</span><span style="color:#f92672">=+</span><span style="color:#ae81ff">18</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">相对字体大小</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/size&gt;</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">size</span><span style="color:#f92672">=-</span><span style="color:#ae81ff">18</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">相对字体大小</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/size&gt;</span>
+
+<span style="color:#e6db74">&#34;偏移距离&#34;</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">pos</span><span style="color:#f92672">=</span><span style="color:#ae81ff">5.5</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Chara</span>
+</code></pre></div><h2 id="3事件">
+  <strong>3.事件</strong>
+  <a class="anchor" href="#3%e4%ba%8b%e4%bb%b6">#</a>
+</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#">uiYuanSuText.onTextShowed.AddListener(<span style="color:#66d9ef">delegate</span>
+{
+    AkLog.print(<span style="color:#e6db74">&#34;展示完成回调&#34;</span>);
+});
+uiYuanSuText.onTypewriterStart.AddListener(<span style="color:#66d9ef">delegate</span>
+{
+    AkLog.print(<span style="color:#e6db74">&#34;onTypewriterStart&#34;</span>);
+});
+uiYuanSuText.onCharacterVisible.AddListener(<span style="color:#66d9ef">delegate</span>(<span style="color:#66d9ef">char</span> arg0)
+{
+    AkLog.print(<span style="color:#e6db74">$&#34;每个字符回调 {arg0}&#34;</span>);
+});
+
+</code></pre></div><h2 id="4代码-textanimatorplayer">
+  <strong>4.代码-TextAnimatorPlayer</strong>
+  <a class="anchor" href="#4%e4%bb%a3%e7%a0%81-textanimatorplayer">#</a>
+</h2>
+<pre><code>不能再 Awake 里调用
+    xxx.ShowText(builtText);
+</code></pre></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){if(window.getSelection().toString())return;a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1常用标签"><strong>1.常用标签</strong></a></li>
+    <li><a href="#2富文本"><strong>2.富文本</strong></a></li>
+    <li><a href="#3事件"><strong>3.事件</strong></a></li>
+    <li><a href="#4代码-textanimatorplayer"><strong>4.代码-TextAnimatorPlayer</strong></a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
