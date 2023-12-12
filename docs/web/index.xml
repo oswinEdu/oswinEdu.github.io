@@ -42,10 +42,11 @@
       <guid>https://oswinedu.github.io/docs/web/css-%E5%B8%83%E5%B1%80-flex/</guid>
       <description>CSS-布局-flex #  参考
 参考
-1.属性 #    flex-wrap: nowrap | wrap | wrap-reverse;
+1.属性 #    flex-direction: row | row-reverse | column | column-reverse;
+ 主轴方向，它决定了容器内元素排列方向    flex-wrap: nowrap | wrap | wrap-reverse;
  wrap; 换行，第一行在上方 nowrap;不换行 wrap-reverse;换行，第一行在下方。    justify-content: flex-start | flex-end | center | space-between | space-around;
- flex-start（默认值）：左对齐 flex-end：右对齐 center： 居中 space-between：两端对齐，项目之间的间隔都相等。 space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍    align-items: flex-start | flex-end | center | baseline | stretch;
- flex-start：交叉轴的起点对齐。 flex-end：交叉轴的终点对齐。 center：交叉轴的中点对齐。 baseline: 项目的第一行文字的基线对齐。 stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。    align-content: flex-start | flex-end | center | space-between | space-around | stretch;</description>
+ 元素在主轴的对齐方式 flex-start（默认值）：左对齐 flex-end：右对齐 center： 居中 space-between：两端对齐，项目之间的间隔都相等。 space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍    align-items: flex-start | flex-end | center | baseline | stretch;
+ 元素在交叉轴上的对齐方式 flex-start：交叉轴的起点对齐。 flex-end：交叉轴的终点对齐。 center：交叉轴的中点对齐。 baseline: 项目的第一行文字的基线对齐。 stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。    align-content: flex-start | flex-end | center | space-between | space-around | stretch;</description>
     </item>
     
     <item>
@@ -61,7 +62,8 @@
   place-items: 垂直 水平
   grid-template-columns: 列
  1.可分很多列, 设置每列宽度 2.如分成3列, 5个子元素, 多两个第二行显示 3.minmax(150px, 25%) 1fr grid-template-columns: minmax(150px, 25%) 1fr; 第一列的宽度是minmax(150px, 25%) 最小宽度为150px，最大宽度为总宽度的25% 第二列为1fr，即所有剩余宽度    grid-template-rows: 行
- grid-template-rows: auto 1fr auto; 第一部分 和第三部分 的高度都为auto，本来的内容高度；第二部分的高度为1fr，剩余的所有高度 1.可分成很多行, 设置每行高度    grid-template: 行 列 grid-template: auto 1fr auto / auto 1fr auto;</description>
+ grid-template-rows: auto 1fr auto; 第一部分 和第三部分 的高度都为auto，本来的内容高度；第二部分的高度为1fr，剩余的所有高度 1.可分成很多行, 设置每行高度    grid-template: 行 列
+ grid-template: auto 1fr auto / auto 1fr auto;    grid-row-gap:</description>
     </item>
     
     <item>
