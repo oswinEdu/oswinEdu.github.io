@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Hugo #  中文站点
+主题
+1.安装 #  参考
+1.hugo命令 #  参考
+brew install hugo hugo version hugo new site blog 创建站点 cd blog 文件夹 hugo server 启动本地服务器 hugo server -D hugo server -p [端口] hugo 生成静态 web 文件上传github访问 hugo new about.md 创建Markdown文件, 模板 xxx/archetypes/default.md hugo new post/first.md 2.站点文件夹 #   archetypes：存放用 hugo 命令新建的 md 文件应用的 front matter 模版 content：存放内容页面，如 Blog layouts：存放定义网站的样式，写在layouts文件下的样式会覆盖安装的主题中的 layouts文件同名的样式 static：存放所有静态文件，如图片 data：存放创建站点时 Hugo 使用的其他数据 public：存放 Hugo 生成的静态网页 themes：存放主题文件 config.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="Hugo #  中文站点
+主题
+1.安装 #  参考
+1.hugo命令 #  参考
+brew install hugo hugo version hugo new site blog 创建站点 cd blog 文件夹 hugo server 启动本地服务器 hugo server -D hugo server -p [端口] hugo 生成静态 web 文件上传github访问 hugo new about.md 创建Markdown文件, 模板 xxx/archetypes/default.md hugo new post/first.md 2.站点文件夹 #   archetypes：存放用 hugo 命令新建的 md 文件应用的 front matter 模版 content：存放内容页面，如 Blog layouts：存放定义网站的样式，写在layouts文件下的样式会覆盖安装的主题中的 layouts文件同名的样式 static：存放所有静态文件，如图片 data：存放创建站点时 Hugo 使用的其他数据 public：存放 Hugo 生成的静态网页 themes：存放主题文件 config." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://oswinedu.github.io/docs/tool/hugo/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2023-10-29T23:21:04+08:00" />
+<meta property="article:modified_time" content="2023-10-29T23:21:04+08:00" />
+
+<title>Hugo | 一休笔记</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="stylesheet" href="/book.min.33a48f5432973b8ff9a82679d9e45d67f2c15d4399bd2829269455cfe390b5e8.css" integrity="sha256-M6SPVDKXO4/5qCZ52eRdZ/LBXUOZvSgpJpRVz&#43;OQteg=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.6121ddfdca054e9d0956d9fa1e44b02b4eafcdb86c7d53c87d54bad6f456523f.js" integrity="sha256-YSHd/coFTp0JVtn6HkSwK06vzbhsfVPIfVS61vRWUj8=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>一休笔记</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a861fa792a7a37b9fce8a64f6c3bc0da" class="toggle"  />
+    <label for="section-a861fa792a7a37b9fce8a64f6c3bc0da" class="flex justify-between">
+      <a href="/docs/blander/" class="">Blander</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE/" class="">常用设置</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/%E5%B7%A5%E4%BD%9C%E5%8C%BA/" class="">工作区</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/1.%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/" class="">1.基础操作</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/2.%E6%B8%B8%E6%A0%87%E5%8E%9F%E7%82%B9/" class="">2.游标原点</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/3.%E6%A8%A1%E5%9E%8B/" class="">3.模型</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/4.%E9%9D%A2/" class="">4.面</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/5.%E8%BE%B9/" class="">5.边</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/6.%E7%82%B9/" class="">6.点</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/10.%E5%BD%A2%E7%8A%B6/" class="">10.形状</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/23.%E6%9D%90%E8%B4%A8/" class="">23.材质</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/blander/24.%E7%9D%80%E8%89%B2%E5%99%A8/" class="">24.着色器</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f30be790aa0d0da5d927d6988a0aa1db" class="toggle"  />
+    <label for="section-f30be790aa0d0da5d927d6988a0aa1db" class="flex justify-between">
+      <a href="/docs/cxx/" class="">C#</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cxx/%E5%BA%8F%E5%88%97%E5%8C%96/" class="">序列化</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cxx/%E6%B3%9B%E5%9E%8B/" class="">泛型</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7beecf9e3235b2c1835e0ce256d0d2a9" class="toggle"  />
+    <label for="section-7beecf9e3235b2c1835e0ce256d0d2a9" class="flex justify-between">
+      <a href="/docs/high_1/" class="">High 1</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-440b633c2616448629c7b8b4ae340bea" class="toggle"  />
+    <label for="section-440b633c2616448629c7b8b4ae340bea" class="flex justify-between">
+      <a href="/docs/high_1/%E9%9B%86%E5%90%88/" class="">集合</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/high_1/%E9%9B%86%E5%90%88/%E9%9B%86%E5%90%88%E9%97%B4%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%85%B3%E7%B3%BB/" class="">集合间的基本关系</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/high_1/%E9%9B%86%E5%90%88/%E9%9B%86%E5%90%88%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/" class="">集合的基本运算</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3e0a33812d4be48b9a1ad7722d8a90cf" class="toggle"  />
+    <label for="section-3e0a33812d4be48b9a1ad7722d8a90cf" class="flex justify-between">
+      <a href="/docs/high_1/%E4%B8%80%E5%85%83%E4%BA%8C%E6%AC%A1%E5%87%BD%E6%95%B0/" class="">一元二次函数</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-66ec1d3f591a5234d78b26bb390aa62f" class="toggle"  />
+    <label for="section-66ec1d3f591a5234d78b26bb390aa62f" class="flex justify-between">
+      <a href="/docs/unity/" class="">Unity</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/unity/%E5%BC%82%E6%AD%A5/" class="">异步</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bbde4172d50d263833d22747cee3ece0" class="toggle"  />
+    <label for="section-bbde4172d50d263833d22747cee3ece0" class="flex justify-between">
+      <a href="/docs/unity/%E6%8F%92%E4%BB%B6/" class="">插件</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/unity/%E6%8F%92%E4%BB%B6/textanimator/" class="">Text Animator</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bbf404e4b94d6101c7bf1ae47e3efc25" class="toggle"  />
+    <label for="section-bbf404e4b94d6101c7bf1ae47e3efc25" class="flex justify-between">
+      <a href="/docs/web/" class="">Web</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web/css-tmp/" class="">Css Tmp</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web/css/" class="">Css</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web/css-%E5%B8%83%E5%B1%80-demo/" class="">Css 布局 Demo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web/css-%E5%B8%83%E5%B1%80-flex/" class="">Css 布局 Flex</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web/css-%E5%B8%83%E5%B1%80-grid/" class="">Css 布局 Grid</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web/css-%E6%95%99%E7%A8%8B/" class="">Css 教程</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web/uni/" class="">Uni</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/example/" class="">Example Site</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/table-of-contents/" class="">Table of Contents</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/table-of-contents/with-toc/" class="">With ToC</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/table-of-contents/without-toc/" class="">Without ToC</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4e46b01272d410b3a99461d79326ddf4" class="toggle"  />
+    <label for="section-4e46b01272d410b3a99461d79326ddf4" class="flex justify-between">
+      <a role="button" class="">Collapsed</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/collapsed/3rd-level/" class="">3rd Level</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/collapsed/3rd-level/4th-level/" class="">4th Level</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-eda0a8fcd7e426fd95136363a63238ac" class="toggle" checked />
+    <label for="section-eda0a8fcd7e426fd95136363a63238ac" class="flex justify-between">
+      <a href="/docs/tool/" class="">Tool</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/tool/hugo/" class="active">Hugo</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Shortcodes</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/buttons/" class="">Buttons</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/columns/" class="">Columns</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/details/" class="">Details</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/expand/" class="">Expand</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/hints/" class="">Hints</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/katex/" class="">Katex</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/mermaid/" class="">Mermaid</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d3fc1bf6d66cd84b896a0af9f40cb1d5" class="toggle"  />
+    <label for="section-d3fc1bf6d66cd84b896a0af9f40cb1d5" class="flex justify-between">
+      <a href="/docs/shortcodes/section/" class="">Section</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/section/first-page/" class="">First Page</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/section/second-page/" class="">Second Page</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/tabs/" class="">Tabs</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/"  >
+        Blog
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Hugo</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1安装"><strong>1.安装</strong></a>
+      <ul>
+        <li><a href="#1hugo命令"><strong>1.hugo命令</strong></a></li>
+        <li><a href="#2站点文件夹"><strong>2.站点文件夹</strong></a></li>
+        <li><a href="#3github显示博客"><strong>3.github显示博客</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#2安装主题hugo-book"><strong>2.安装主题hugo-book</strong></a>
+      <ul>
+        <li><a href="#1配置主题"><strong>1.配置主题</strong></a></li>
+        <li><a href="#2左侧side"><strong>2.左侧side</strong></a></li>
+        <li><a href="#3configtoml"><strong>3.config.toml</strong></a></li>
+        <li><a href="#4xxxmd配置"><strong>4.xxx.md配置</strong></a></li>
+        <li><a href="#5post配置"><strong>5.post配置</strong></a></li>
+        <li><a href="#6引入本地图片"><strong>6.引入本地图片</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="hugo">
+  <strong>Hugo</strong>
+  <a class="anchor" href="#hugo">#</a>
+</h1>
+<p><a href="https://www.gohugo.org/">中文站点</a></p>
+<p><a href="https://themes.gohugo.io/">主题</a></p>
+<h2 id="1安装">
+  <strong>1.安装</strong>
+  <a class="anchor" href="#1%e5%ae%89%e8%a3%85">#</a>
+</h2>
+<p><a href="https://cuttontail.blog/blog/create-a-wesite-using-github-pages-and-hugo/#63-%E9%85%8D%E7%BD%AE-hugo-%E4%B8%BB%E9%A2%98">参考</a></p>
+<h3 id="1hugo命令">
+  <strong>1.hugo命令</strong>
+  <a class="anchor" href="#1hugo%e5%91%bd%e4%bb%a4">#</a>
+</h3>
+<p><a href="https://commandnotfound.cn/linux/1/482/hugo-%E5%91%BD%E4%BB%A4">参考</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    brew install hugo
+    hugo version
+
+    hugo new site blog      创建站点
+    cd blog                 文件夹
+    hugo server             启动本地服务器
+    hugo server -D
+    hugo server -p <span style="color:#f92672">[</span>端口<span style="color:#f92672">]</span> 
+    hugo                    生成静态 web 文件上传github访问
+
+    hugo new about.md       创建Markdown文件, 模板 xxx/archetypes/default.md
+    hugo new post/first.md  
+</code></pre></div><h3 id="2站点文件夹">
+  <strong>2.站点文件夹</strong>
+  <a class="anchor" href="#2%e7%ab%99%e7%82%b9%e6%96%87%e4%bb%b6%e5%a4%b9">#</a>
+</h3>
+<ul>
+<li><strong>archetypes</strong>：存放用 hugo 命令新建的 md 文件应用的 front matter 模版</li>
+<li><strong>content</strong>：存放内容页面，如 Blog</li>
+<li><strong>layouts</strong>：存放定义网站的样式，写在<code>layouts</code>文件下的样式会覆盖安装的主题中的 <code>layouts</code>文件同名的样式</li>
+<li><strong>static</strong>：存放所有静态文件，如图片</li>
+<li><strong>data</strong>：存放创建站点时 Hugo 使用的其他数据</li>
+<li><strong>public</strong>：存放 Hugo 生成的静态网页</li>
+<li><strong>themes</strong>：存放主题文件</li>
+<li><strong>config.toml</strong>：网站配置文件</li>
+</ul>
+<h3 id="3github显示博客">
+  <strong>3.github显示博客</strong>
+  <a class="anchor" href="#3github%e6%98%be%e7%a4%ba%e5%8d%9a%e5%ae%a2">#</a>
+</h3>
+<ul>
+<li>hugo new site blog 创建本地博客</li>
+<li>cd blog 执行 hugo 命令生成发布文件在 public文件夹</li>
+<li>blog文件夹一个github地址忽略public文件夹</li>
+<li>public文件夹真正静态网页上传 github 对应 <a href="https://oswinedu.github.io">https://oswinedu.github.io</a></li>
+</ul>
+<h2 id="2安装主题hugo-book">
+  <strong>2.安装主题hugo-book</strong>
+  <a class="anchor" href="#2%e5%ae%89%e8%a3%85%e4%b8%bb%e9%a2%98hugo-book">#</a>
+</h2>
+<p><a href="https://themes.gohugo.io/themes/hugo-book/">hugo-book</a></p>
+<h3 id="1配置主题">
+  <strong>1.配置主题</strong>
+  <a class="anchor" href="#1%e9%85%8d%e7%bd%ae%e4%b8%bb%e9%a2%98">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    1. 下载 hugo-book主题
+    2. 把 hugo-book 文件夹拷贝到 xxx/themes
+    3. 拷贝 hugo-book/exampleSite/content.en 到 xxx/content <span style="color:#f92672">(</span>menu 文件夹可删除 2022年废弃<span style="color:#f92672">)</span>
+    4. 拷贝 /hugo-book/exampleSite/assets 到 xxx/assets
+    5. 拷贝 /hugo-book/exampleSite/resources 到 xxx/resources
+    6. 拷贝 hugo-book/static 到 xxx/static
+    7. 配置 config.toml 主题 theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hugo-book&#39;</span> 
+    8. hugo server -D 启动本地服务
+</code></pre></div><ul>
+<li><strong>content.en 文件夹内容</strong></li>
+</ul>
+<img src="/images/tool/hugo_1.png" width="50%" height="50%" title="Twitter: {{.}}" alt="Twitter">
+<ul>
+<li><strong>config.toml</strong></li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    baseURL <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&lt;http://example.org/&gt;&#39;</span>
+    languageCode <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;en-us&#39;</span>
+    title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;My New Hugo Site&#39;</span>
+    theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hugo-book&#39;</span> 设置主题
+</code></pre></div><ul>
+<li><strong>启动本地服务器后</strong></li>
+</ul>
+<img src="/images/tool/hugo_2.png" width="60%" height="60%" title="Twitter: {{.}}" alt="Twitter">
+<h3 id="2左侧side">
+  <strong>2.左侧side</strong>
+  <a class="anchor" href="#2%e5%b7%a6%e4%be%a7side">#</a>
+</h3>
+<ul>
+<li><strong>点击站点显示</strong> <code>xxx/content/_index.md </code><strong>内容</strong></li>
+</ul>
+<img src="/images/tool/hugo_3.png" width="50%" height="50%" title="Twitter: {{.}}" alt="Twitter">
+<ul>
+<li><code>xxx/content</code> <strong>每个文件夹下都应该有对应 _index.md 点击文件夹显示</strong></li>
+</ul>
+<img src="/images/tool/hugo_4.png" width="60%" height="60%" title="Twitter: {{.}}" alt="Twitter">
+<ul>
+<li><strong>自动遍历</strong> <code>xxx/content</code> <strong>下所有文件夹和文件, 显示左侧侧边栏</strong></li>
+</ul>
+<h3 id="3configtoml">
+  <strong>3.config.toml</strong>
+  <a class="anchor" href="#3configtoml">#</a>
+</h3>
+<blockquote>
+<p>配置可参考 hugo-book/exampleSite/config.toml</p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    baseURL <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;http://example.org/&#39;</span>
+    languageCode <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;en-us&#39;</span>
+    title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;My New Hugo Site&#39;</span>
+    <span style="color:#75715e"># 配置主题</span>
+    theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hugo-book&#39;</span> 
+
+    <span style="color:#75715e"># 开启katex渲染</span>
+    <span style="color:#f92672">[</span>markup.goldmark.renderer<span style="color:#f92672">]</span>
+      unsafe <span style="color:#f92672">=</span> true
+</code></pre></div><h3 id="4xxxmd配置">
+  <strong>4.xxx.md配置</strong>
+  <a class="anchor" href="#4xxxmd%e9%85%8d%e7%bd%ae">#</a>
+</h3>
+<pre><code>---
+title: aaaa123                      左侧边栏显示名字，不配做默认 xxx.md 文件名
+type: docs
+bookCollapseSection: true           文件夹下 _index.md 默认文件夹不展开如 Collapsed 文件夹
+bookFlatSection: true               文件夹下 _index.md 文件夹不可点击如 Shortcodes 文件夹
+
+draft: true                         true执行hugo命令静态文件不会被导出到public文件夹
+weight: 1                           多个文件显示顺序,小的在前面
+---
+</code></pre>
+<h3 id="5post配置">
+  <strong>5.post配置</strong>
+  <a class="anchor" href="#5post%e9%85%8d%e7%bd%ae">#</a>
+</h3>
+<ul>
+<li><strong>参考</strong> <code>/content/posts</code></li>
+</ul>
+<img src="/images/tool/hugo_5.png" width="60%" height="60%" title="Twitter: {{.}}" alt="Twitter">
+<ul>
+<li>
+<p><strong>_index.md</strong></p>
+<pre><code>  menu:
+  after:
+  name: blog
+  weight: 5
+  title: Blog
+</code></pre>
+</li>
+</ul>
+<h3 id="6引入本地图片">
+  <strong>6.引入本地图片</strong>
+  <a class="anchor" href="#6%e5%bc%95%e5%85%a5%e6%9c%ac%e5%9c%b0%e5%9b%be%e7%89%87">#</a>
+</h3>
+<ul>
+<li><strong>创建 images文件夹 xxx/content/images</strong></li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    1.title 图片提示 
+    2.可缩放图片
+    &lt;img src<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/images/screenshot.png&#34;</span> width<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;48%&#34;</span> height<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;48%&#34;</span> title<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Twitter: {{.}}&#34;</span> alt<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Twitter&#34;</span>&gt;
+
+    1.引入图片
+    !<span style="color:#f92672">[</span>Example image<span style="color:#f92672">](</span>/images/screenshot.png<span style="color:#f92672">)</span>
+    !<span style="color:#f92672">[</span>Example image<span style="color:#f92672">](</span>/images/test.png?w<span style="color:#f92672">=</span>1422&amp;h<span style="color:#f92672">=</span>400<span style="color:#f92672">)</span>
+    缩放
+    !<span style="color:#f92672">[</span>Example image<span style="color:#f92672">](</span>/images/test.png?w<span style="color:#f92672">=</span>1422&amp;h<span style="color:#f92672">=</span>200<span style="color:#f92672">)</span>  整体缩放 0.5
+
+    1.点击图片播放视频
+    <span style="color:#f92672">[</span>!<span style="color:#f92672">[</span>Example image<span style="color:#f92672">](</span>https://img2.baidu.com/it/u<span style="color:#f92672">=</span>2363900005,280886924&amp;fm<span style="color:#f92672">=</span>253&amp;fmt<span style="color:#f92672">=</span>auto&amp;app<span style="color:#f92672">=</span>120&amp;f<span style="color:#f92672">=</span>JPEG?w<span style="color:#f92672">=</span>1422&amp;h<span style="color:#f92672">=</span>400<span style="color:#f92672">)](</span>https://player.bilibili.com/player.html?aid<span style="color:#f92672">=</span>683633468&amp;bvid<span style="color:#f92672">=</span>BV1jS4y1w7SW&amp;cid<span style="color:#f92672">=</span>711074429&amp;page<span style="color:#f92672">=</span>1<span style="color:#f92672">)</span>
+
+    !<span style="color:#f92672">[](</span>/images/screenshot.png<span style="color:#f92672">)</span>
+</code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){if(window.getSelection().toString())return;a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1安装"><strong>1.安装</strong></a>
+      <ul>
+        <li><a href="#1hugo命令"><strong>1.hugo命令</strong></a></li>
+        <li><a href="#2站点文件夹"><strong>2.站点文件夹</strong></a></li>
+        <li><a href="#3github显示博客"><strong>3.github显示博客</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#2安装主题hugo-book"><strong>2.安装主题hugo-book</strong></a>
+      <ul>
+        <li><a href="#1配置主题"><strong>1.配置主题</strong></a></li>
+        <li><a href="#2左侧side"><strong>2.左侧side</strong></a></li>
+        <li><a href="#3configtoml"><strong>3.config.toml</strong></a></li>
+        <li><a href="#4xxxmd配置"><strong>4.xxx.md配置</strong></a></li>
+        <li><a href="#5post配置"><strong>5.post配置</strong></a></li>
+        <li><a href="#6引入本地图片"><strong>6.引入本地图片</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
