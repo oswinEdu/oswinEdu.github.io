@@ -20,5 +20,14 @@
 brew install hugo hugo version hugo new site blog 创建站点 cd blog 文件夹 hugo server 启动本地服务器 hugo server -D hugo server -p [端口] hugo 生成静态 web 文件上传github访问 hugo new about.md 创建Markdown文件, 模板 xxx/archetypes/default.md hugo new post/first.md 2.站点文件夹 #   archetypes：存放用 hugo 命令新建的 md 文件应用的 front matter 模版 content：存放内容页面，如 Blog layouts：存放定义网站的样式，写在layouts文件下的样式会覆盖安装的主题中的 layouts文件同名的样式 static：存放所有静态文件，如图片 data：存放创建站点时 Hugo 使用的其他数据 public：存放 Hugo 生成的静态网页 themes：存放主题文件 config.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://oswinedu.github.io/docs/tool/mac/</link>
+      <pubDate>Sun, 29 Oct 2023 23:21:04 +0800</pubDate>
+      
+      <guid>https://oswinedu.github.io/docs/tool/mac/</guid>
+      <description>Mac #  1.常用软件 #  2.其他软件 #  1.视频录制 #  &amp;quot;不好用&amp;quot; 迅捷屏幕录像工具 MorphVOX </description>
+    </item>
+    
   </channel>
 </rss>
