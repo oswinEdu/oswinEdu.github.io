@@ -9,6 +9,16 @@
     <lastBuildDate>Sun, 29 Oct 2023 23:21:04 +0800</lastBuildDate><atom:link href="https://oswinedu.github.io/docs/tool/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://oswinedu.github.io/docs/tool/aicode/</link>
+      <pubDate>Sun, 29 Oct 2023 23:21:04 +0800</pubDate>
+      
+      <guid>https://oswinedu.github.io/docs/tool/aicode/</guid>
+      <description>Ai 编程 #  1.cursor #  官网
+ 生成代码  cmd + k 输入要生产代码说明  选中代码  cmd + k 告诉 ai 你的诉求, 帮你修改 cmd + l 解释选中代码  提问问题  cmd + y 右边提问你想问的问题 </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://oswinedu.github.io/docs/tool/hugo/</link>
       <pubDate>Sun, 29 Oct 2023 23:21:04 +0800</pubDate>
       
