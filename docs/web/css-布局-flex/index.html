@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="CSS-布局-flex #  参考
+<meta name="description" content="CSS-布局-flex #  布局示例
 参考
-1.属性 #    flex-direction: row | row-reverse | column | column-reverse;
+参考
+ 1.不能设置子元素宽高, 子元素可以自己设置宽高  1.属性 #    flex-direction: row | row-reverse | column | column-reverse;
  主轴方向，它决定了容器内元素排列方向    flex-wrap: nowrap | wrap | wrap-reverse;
- wrap; 换行，第一行在上方 nowrap;不换行 wrap-reverse;换行，第一行在下方。    justify-content: flex-start | flex-end | center | space-between | space-around;
- 元素在主轴的对齐方式 flex-start（默认值）：左对齐 flex-end：右对齐 center： 居中 space-between：两端对齐，项目之间的间隔都相等。 space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍    align-items: flex-start | flex-end | center | baseline | stretch;
- 元素在交叉轴上的对齐方式 flex-start：交叉轴的起点对齐。 flex-end：交叉轴的终点对齐。 center：交叉轴的中点对齐。 baseline: 项目的第一行文字的基线对齐。 stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。    align-content: flex-start | flex-end | center | space-between | space-around | stretch;">
+ wrap; 换行，第一行在上方 nowrap;不换行 wrap-reverse;换行，第一行在下方。    flex-flow:
+ flex-flow: &lt;flex-direction&gt; &lt;flex-wrap&gt;    justify-content 图片1 说明1  元素在主轴的对齐方式 (1) flex-start（默认值）：左对齐 (2) flex-end：右对齐 (3) center： 居中 (4) space-between：两端对齐，项目之间的间隔都相等。 (5) space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍     align-items">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="CSS-布局-flex #  参考
+<meta property="og:description" content="CSS-布局-flex #  布局示例
 参考
-1.属性 #    flex-direction: row | row-reverse | column | column-reverse;
+参考
+ 1.不能设置子元素宽高, 子元素可以自己设置宽高  1.属性 #    flex-direction: row | row-reverse | column | column-reverse;
  主轴方向，它决定了容器内元素排列方向    flex-wrap: nowrap | wrap | wrap-reverse;
- wrap; 换行，第一行在上方 nowrap;不换行 wrap-reverse;换行，第一行在下方。    justify-content: flex-start | flex-end | center | space-between | space-around;
- 元素在主轴的对齐方式 flex-start（默认值）：左对齐 flex-end：右对齐 center： 居中 space-between：两端对齐，项目之间的间隔都相等。 space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍    align-items: flex-start | flex-end | center | baseline | stretch;
- 元素在交叉轴上的对齐方式 flex-start：交叉轴的起点对齐。 flex-end：交叉轴的终点对齐。 center：交叉轴的中点对齐。 baseline: 项目的第一行文字的基线对齐。 stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。    align-content: flex-start | flex-end | center | space-between | space-around | stretch;" />
+ wrap; 换行，第一行在上方 nowrap;不换行 wrap-reverse;换行，第一行在下方。    flex-flow:
+ flex-flow: &lt;flex-direction&gt; &lt;flex-wrap&gt;    justify-content 图片1 说明1  元素在主轴的对齐方式 (1) flex-start（默认值）：左对齐 (2) flex-end：右对齐 (3) center： 居中 (4) space-between：两端对齐，项目之间的间隔都相等。 (5) space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍     align-items" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://oswinedu.github.io/docs/web/css-%E5%B8%83%E5%B1%80-flex/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2023-10-29T23:21:04+08:00" />
@@ -30,7 +30,7 @@
 <link rel="icon" href="/favicon.png" >
 <link rel="stylesheet" href="/book.min.33a48f5432973b8ff9a82679d9e45d67f2c15d4399bd2829269455cfe390b5e8.css" integrity="sha256-M6SPVDKXO4/5qCZ52eRdZ/LBXUOZvSgpJpRVz&#43;OQteg=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.51cafe2e6a8b0ef000cec0c14bb9923c73c2b62a007a36b890c5d36ac51f1b9a.js" integrity="sha256-Ucr&#43;LmqLDvAAzsDBS7mSPHPCtioAeja4kMXTasUfG5o=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.a534a025704f9d8d6c6d89a7d7b921f587ed09e587701c72a98bf3e18539f42a.js" integrity="sha256-pTSgJXBPnY1sbYmn17kh9YftCeWHcBxyqYvz4YU59Co=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -997,8 +997,11 @@ https://github.com/alex-shpak/hugo-book
   <strong>CSS-布局-flex</strong>
   <a class="anchor" href="#css-%e5%b8%83%e5%b1%80-flex">#</a>
 </h1>
+<p><a href="https://static.vgee.cn/static/index.html">布局示例</a></p>
 <p><a href="https://www.ruanyifeng.com/blog/2020/08/five-css-layouts-in-one-line.html">参考</a></p>
 <p><a href="https://www.ruanyifeng.com/blog/2015/07/flex-grammar.html">参考</a></p>
+<pre><code>    1.不能设置子元素宽高, 子元素可以自己设置宽高
+</code></pre>
 <h3 id="1属性">
   <strong>1.属性</strong>
   <a class="anchor" href="#1%e5%b1%9e%e6%80%a7">#</a>
@@ -1017,29 +1020,65 @@ https://github.com/alex-shpak/hugo-book
 </code></pre>
 </li>
 <li>
-<p><strong>justify-content</strong>: flex-start | flex-end | center | space-between | space-around;</p>
-<pre><code>  元素在主轴的对齐方式
-  flex-start（默认值）：左对齐
-  flex-end：右对齐
-  center： 居中
-  space-between：两端对齐，项目之间的间隔都相等。
-  space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍
+<p><strong>flex-flow</strong>:</p>
+<pre><code>  flex-flow: &lt;flex-direction&gt; &lt;flex-wrap&gt;
 </code></pre>
 </li>
 <li>
-<p><strong>align-items</strong>: flex-start | flex-end | center | baseline | stretch;</p>
-<pre><code>  元素在交叉轴上的对齐方式
-  flex-start：交叉轴的起点对齐。
-  flex-end：交叉轴的终点对齐。
-  center：交叉轴的中点对齐。
-  baseline: 项目的第一行文字的基线对齐。
-  stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。
+<p><strong>justify-content</strong>
+
+
+
+
+<div class="book-tabs"><input type="radio" class="toggle" name="tabs-uniqueid" id="tabs-uniqueid-0" checked="checked" />
+  <label for="tabs-uniqueid-0">图片1</label>
+  <div class="book-tabs-content markdown-inner"><img src="/images/web/css/flex_1.png" width="50%" height="65%" title="Twitter: {{.都是}}" alt="Image"></div><input type="radio" class="toggle" name="tabs-uniqueid" id="tabs-uniqueid-1"  />
+  <label for="tabs-uniqueid-1">说明1</label>
+  <div class="book-tabs-content markdown-inner"><pre><code>    元素在主轴的对齐方式
+    (1) flex-start（默认值）：左对齐
+    (2) flex-end：右对齐
+    (3) center： 居中
+    (4) space-between：两端对齐，项目之间的间隔都相等。
+    (5) space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍
 </code></pre>
+</div></div>
+</p>
 </li>
 <li>
-<p><strong>align-content</strong>: flex-start | flex-end | center | space-between | space-around | stretch;</p>
+<p><strong>align-items</strong></p>
 </li>
 </ul>
+
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>图片</span>
+      <span>...</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <img src="/images/web/css/flex_2.png" width="50%" height="65%" title="Twitter: {{都是}}" alt="Image">
+<img src="/images/web/css/flex_3.png" width="50%" height="65%" title="Twitter: {{都是}}" alt="Image">
+<img src="/images/web/css/flex_4.png" width="50%" height="65%" title="Twitter: {{都是}}" alt="Image">
+    </div>
+  </label>
+</div>
+
+<pre><code>    元素在交叉轴上的对齐方式
+    (1) flex-start：交叉轴的起点对齐。
+    (2) flex-end：交叉轴的终点对齐。
+    (3) center：交叉轴的中点对齐。
+    (4) baseline: 项目的第一行文字的基线对齐。
+    (5) stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。
+</code></pre>
+<ul>
+<li>
+<p><strong>align-content</strong>: flex-start | flex-end | center | space-between | space-around | stretch;</p>
+<pre><code>  多根轴线（多行）的对齐方式。如果项目只有一根轴线，该属性不起作用
+</code></pre>
+</li>
+</ul>
+<hr>
 <h3 id="2子元素">
   <strong>2.子元素</strong>
   <a class="anchor" href="#2%e5%ad%90%e5%85%83%e7%b4%a0">#</a>
@@ -1049,25 +1088,48 @@ https://github.com/alex-shpak/hugo-book
 </blockquote>
 <ul>
 <li>
-<p><strong>子节点-flex</strong>:</p>
-<pre><code>  flex: 如果有多于宽度是否可扩大(1可以 0不可以) 如果宽度不足是否可缩小 初始宽度
-  1 1 150px  始终会占满所有宽度
+<p><strong>order</strong>:</p>
+<pre><code>  项目的排列顺序。数值越小，排列越靠前，默认为0
 </code></pre>
 </li>
 <li>
-<p><strong>子节点-flex-grow</strong>:</p>
-<pre><code>  .child1 {
+<p><strong>flex-basis</strong>: 设置宽度</p>
+<pre><code>  初始宽度
+</code></pre>
+</li>
+<li>
+<p><strong>flex-grow</strong>: 不足</p>
+<pre><code>  如果有多余宽度，项目是否可以扩大(0不可以、1可以)
+  .child1 {
     flex-grow:1;
   }
   .child2 {
     flex-grow:1;
-    background: coral;
   }
   .child3 {
     flex-grow:2;
   }
   child1 占宽度 1/4、child2 占宽度 1/4、child3 占宽度 2/4
 </code></pre>
+</li>
+<li>
+<p><strong>flex-shrink</strong>: 超出</p>
+<pre><code>  如果宽度不足，项目是否可以缩小(0不可以、1可以)
+  (1) 缩小比例，默认为1，即如果空间不足，该项目将缩小
+  (2) 如果所有项目的flex-shrink属性都为1，当空间不足时，都将等比例缩小
+  (3) 如果一个项目的flex-shrink属性为0，其他项目都为1，则空间不足时，前者不缩小。
+</code></pre>
+</li>
+<li>
+<p><strong>flex</strong>:</p>
+<pre><code>  缩写 `flex-grow flex-shrink flex-basis`
+  (1) flex: 0 1 150px (不可以扩大、容器不足缩写、初始宽度150px)
+  (2) 始终会占满所有宽度
+</code></pre>
+</li>
+<li>
+<p><strong>align-self</strong>:</p>
+<p>覆盖父元素的 align-items属性,</p>
 </li>
 </ul>
 </article>

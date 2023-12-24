@@ -16,13 +16,10 @@
       <description>CSS #  测试
 测试
 参考-api
-1.基础 #  1.变量 #  定义变量使用变量
-.container { --line-height:30rpx; .item { height: height: var(--line-height); } }  2.常用属性 #    position: 位置
- relative absolute 父节点相对位置，子节点绝对位置可以重叠布局 距离父节点上下左右距离一般配合 left、right、top、bottom 使用    background: 背景 wheat coral lightpink red yellow green
- background: rgba(0, 128, 0, 0.3)    background-color: 背景颜色
-  opacoty: 透明度
-  width height:
- 可以指定大小 100px 10vh、也可以指定父类百分比 50%    right left bottom top:</description>
+测试
+demo
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width&amp;#34;&amp;gt; &amp;lt;title&amp;gt;JS Bin&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div class=&amp;#34;container&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;item item-1&amp;#34;&amp;gt;1&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; .container{ display: grid; grid-template-columns: 50px 50px 50px; grid-template-rows: 60px 60px; } .item { font-size: 2em; text-align: center; border: 1px solid #e5e4e9; } .item-1 { background-color: #ef342a; } 1.基础 #  1.变量 #  定义变量使用变量
+.container { --line-height:30rpx; .item { height: height: var(--line-height); } }  2.</description>
     </item>
     
     <item>
@@ -41,7 +38,7 @@
       <pubDate>Sun, 29 Oct 2023 23:21:04 +0800</pubDate>
       
       <guid>https://oswinedu.github.io/docs/web/css-%E5%87%BD%E6%95%B0/</guid>
-      <description>函数 #  1.calc #  元素的宽度将是其父元素宽度减去20像素 .element { width: calc(100% - 20px); } 将行高设置为字体大小的两倍 line-height: calc(2 * 1em); </description>
+      <description>函数 #  1.calc #  元素的宽度将是其父元素宽度减去20像素 .element { width: calc(100% - 20px); } 将行高设置为字体大小的两倍 line-height: calc(2 * 1em); 2.minmax #  minmax(10px, 1fr) 3.repeat #  repeat(重复次数, 内容) repeat(2, 100px 20px 80px) `100px 20px 80px` 重复两次 repeat(3, 33.33%) `33.33%` 重复3次 </description>
     </item>
     
     <item>
@@ -60,13 +57,13 @@
       <pubDate>Sun, 29 Oct 2023 23:21:04 +0800</pubDate>
       
       <guid>https://oswinedu.github.io/docs/web/css-%E5%B8%83%E5%B1%80-flex/</guid>
-      <description>CSS-布局-flex #  参考
+      <description>CSS-布局-flex #  布局示例
 参考
-1.属性 #    flex-direction: row | row-reverse | column | column-reverse;
+参考
+ 1.不能设置子元素宽高, 子元素可以自己设置宽高  1.属性 #    flex-direction: row | row-reverse | column | column-reverse;
  主轴方向，它决定了容器内元素排列方向    flex-wrap: nowrap | wrap | wrap-reverse;
- wrap; 换行，第一行在上方 nowrap;不换行 wrap-reverse;换行，第一行在下方。    justify-content: flex-start | flex-end | center | space-between | space-around;
- 元素在主轴的对齐方式 flex-start（默认值）：左对齐 flex-end：右对齐 center： 居中 space-between：两端对齐，项目之间的间隔都相等。 space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍    align-items: flex-start | flex-end | center | baseline | stretch;
- 元素在交叉轴上的对齐方式 flex-start：交叉轴的起点对齐。 flex-end：交叉轴的终点对齐。 center：交叉轴的中点对齐。 baseline: 项目的第一行文字的基线对齐。 stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。    align-content: flex-start | flex-end | center | space-between | space-around | stretch;</description>
+ wrap; 换行，第一行在上方 nowrap;不换行 wrap-reverse;换行，第一行在下方。    flex-flow:
+ flex-flow: &amp;lt;flex-direction&amp;gt; &amp;lt;flex-wrap&amp;gt;    justify-content 图片1 说明1  元素在主轴的对齐方式 (1) flex-start（默认值）：左对齐 (2) flex-end：右对齐 (3) center： 居中 (4) space-between：两端对齐，项目之间的间隔都相等。 (5) space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍     align-items</description>
     </item>
     
     <item>
@@ -75,15 +72,11 @@
       <pubDate>Sun, 29 Oct 2023 23:21:04 +0800</pubDate>
       
       <guid>https://oswinedu.github.io/docs/web/css-%E5%B8%83%E5%B1%80-grid/</guid>
-      <description>CSS-布局-grid #  参考
-参考
-1.属性 #    justify-items: 水平位置 start end center
-  align-items: 垂直位置 start end center
-  place-items: 垂直 水平
-  grid-template-columns: 列
- 1.可分很多列, 设置每列宽度 2.如分成3列, 5个子元素, 多两个第二行显示 3.minmax(150px, 25%) 1fr grid-template-columns: minmax(150px, 25%) 1fr; 第一列的宽度是minmax(150px, 25%) 最小宽度为150px，最大宽度为总宽度的25% 第二列为1fr，即所有剩余宽度    grid-template-rows: 行
- grid-template-rows: auto 1fr auto; 第一部分 和第三部分 的高度都为auto，本来的内容高度；第二部分的高度为1fr，剩余的所有高度 1.可分成很多行, 设置每行高度    grid-template: 行 列
- grid-template: auto 1fr auto / auto 1fr auto;    grid-row-gap:</description>
+      <description>CSS-布局-grid #  参考-阮一峰
+ 说明 1. 指定每列宽度和每行高度 2. 没有指定子元素控制宽高 3. 使用 grid 子元素有些布局失效 float、display: inline-block、display: table-cell、vertical-align和column-*等  1.属性 #    1.grid-auto-flow
+ (1) 指定网格填充顺序, 默认先行后列 (2) column 先列后行    2.grid-template-rows: 行
+ grid-template-rows: auto 1fr auto; 第一行- auto, 内容高度 第二行- 1fr, 剩余的所有高度 第三行- auto, 内容高度 默认- auto    2.grid-template-columns: 列
+ 1.可分很多列, 设置每列宽度 2.如分成3列, 5个子元素, 多两个第二行显示 3.minmax(150px, 25%) 1fr 第一列- 最小宽度为150px，最大宽度为总宽度的25% 第二列- 1fr，即所有剩余宽度    2.</description>
     </item>
     
     <item>

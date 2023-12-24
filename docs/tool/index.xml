@@ -14,7 +14,7 @@
       
       <guid>https://oswinedu.github.io/docs/tool/aicode/</guid>
       <description>Ai 编程 #  1.cursor #  官网
- 生成代码  cmd + k 输入要生产代码说明  选中代码  cmd + k 告诉 ai 你的诉求, 帮你修改 cmd + l 解释选中代码  提问问题  cmd + y 右边提问你想问的问题 </description>
+ 生成代码  cmd + k 输入要生产代码说明  选中代码  cmd + k 告诉 ai 你的诉求, 帮你修改 cmd + l 解释选中代码  提问问题  cmd + y 右边提问你想问的问题  @  对话框使用@ @code 帮你分析代码 @函数可以写测试用例 @文件 翻译文件 统计文件字符  image   </description>
     </item>
     
     <item>
