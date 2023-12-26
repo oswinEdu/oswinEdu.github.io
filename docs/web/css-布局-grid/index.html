@@ -26,7 +26,7 @@
 <link rel="icon" href="/favicon.png" >
 <link rel="stylesheet" href="/book.min.33a48f5432973b8ff9a82679d9e45d67f2c15d4399bd2829269455cfe390b5e8.css" integrity="sha256-M6SPVDKXO4/5qCZ52eRdZ/LBXUOZvSgpJpRVz&#43;OQteg=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.a534a025704f9d8d6c6d89a7d7b921f587ed09e587701c72a98bf3e18539f42a.js" integrity="sha256-pTSgJXBPnY1sbYmn17kh9YftCeWHcBxyqYvz4YU59Co=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.7a3fbed637c4b5e72f9504566e0910070b621e223724ee382f229a4a711e58aa.js" integrity="sha256-ej&#43;&#43;1jfEtecvlQRWbgkQBwtiHiI3JO44LyKaSnEeWKo=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -1111,13 +1111,39 @@ https://github.com/alex-shpak/hugo-book
 </h3>
 <ul>
 <li>
-<p><strong>grid-row-start</strong>:</p>
-<pre><code>  指定在哪行
+<p><strong>1.grid-row-start</strong>: 指定在哪行</p>
+</li>
+<li>
+<p><strong>1.grid-column-start</strong>: 指定在哪列</p>
+</li>
+<li>
+<p><strong>2.grid-column-start</strong>: 左边框所在的垂直网格线</p>
+</li>
+<li>
+<p><strong>2.grid-column-end</strong>: 右边框所在的垂直网格线</p>
+</li>
+<li>
+<p><strong>2.grid-row-start</strong>: 上边框所在的水平网格线</p>
+</li>
+<li>
+<p><strong>2.grid-row-end</strong>: 下边框所在的水平网格线</p>
+<pre><code>  (1) 上下左右边框
+  (2) span 2: 跨越两格
 </code></pre>
 </li>
 <li>
-<p><strong>grid-column-start</strong>:</p>
-<pre><code>  指定在哪列
+<p><strong>3.grid-area</strong></p>
+<pre><code>  (1) 指定项目放在哪一个区域
+  (2) grid-area: e;
+  (3) grid-area: &lt;row-start&gt; / &lt;column-start&gt; / &lt;row-end&gt; / &lt;column-end&gt;;
+</code></pre>
+</li>
+<li>
+<p><strong>4.justify-self</strong>:</p>
+</li>
+<li>
+<p><strong>4.align-self</strong>:</p>
+<pre><code>  替代 justify-items align-items
 </code></pre>
 </li>
 <li>
